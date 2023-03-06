@@ -1,0 +1,190 @@
+---
+title: "Data Management and Reproducibility (CTCMS Symposium 2023)"
+subtitle: "A Buffet Tasting"
+author: "Shern Tee"
+institute: "The University of Queensland"
+date: today
+bibliography: refs.bib
+format: 
+  revealjs:
+    toc: true
+    toc-depth: 1
+    theme: uq.scss
+    css: uq_metropolis.css
+    footer: "Data Management and Reproducibility (CTCMS Symposium 2023)"
+    logo: img/uq_logo.svg
+    resources: img
+    title-slide-attributes:
+      data-background-image: img/corner_white.svg, img/swirl_white.svg, img/uq_logo0.svg, img/uq_title_center.png
+      data-background-position: left bottom, right bottom, right 3% top, left bottom
+      data-background-repeat: no-repeat, no-repeat, no-repeat, repeat
+      data-background-size: 30% auto, 30% auto, 18% 12%, contain
+fig-cap-location: margin
+editor:
+  render-on-save: true
+---
+
+# Introduction
+
+## About Me
+
+## Workshop Goals
+
+- Define reproducible research
+- Identify broad principles for reproducibility
+- Find something to work on today!
+
+## Every Researcher's Nightmare
+
+:::: {.columns}
+::: {.column width="50%"}
+![The originally reported structure of MsbA (purple) was inconsistent with the reported structure of Sav1866 (green), as shown on the left. This led to an erroneous inversion in MsbA being identified and corrected, leading to much more consistent structures (right) ... and three retractions from _Science_.](nightmare.gif)
+:::
+
+::: {.column width="50%"}
+> When he investigated, Chang was horrified to discover that a homemade data-analysis program had flipped two columns of data, inverting the electron-density map from which his team had derived the final protein structure. Unfortunately, his group had used the program to analyze data for other proteins. [@nightmare]
+:::
+::::
+
+# Research Reproducibility {.cutout1
+  data-background-color="var(--uqviolet)"
+  data-background-image="img/corner_uqviolet.svg, img/swirl_uqviolet.svg, img/uq_logo0.svg, img/htmlsplash.jpg"
+  data-background-position="50vw bottom, right bottom, right 3% top, 50vw bottom"
+  data-background-repeat="no-repeat, no-repeat, no-repeat, no-repeat"
+  data-background-size="15% auto, 15% auto, 18% 12%, cover"
+}
+
+What is reproducibility, and why do we struggle with it?
+
+[[Image source](https://unsplash.com/photos/8OyKWQgBsKQ)]{.aside}
+
+
+
+# Template-y stuff {visibility=hidden}
+## Software Requirements
+
+- Start by downloading [Quarto](https://quarto.org/docs/get-started/).
+  - Quarto is an open-source scientific and technical publishing system developed by Posit (formerly RStudio)
+    focused on enabling dynamic content (such as Python notebooks)
+    and generating multiple outputs sensibly from a single Markdown source.
+- Install it and run through the online tutorial.
+- Then start creating your own presentation from the `srtee/RevealUQ` template!
+
+## Overall description
+
+Since the template is coded in Markdown it is extremely simple.
+
+With the right Quarto presets it could be extended to many other formats.
+
+Lorem Ipsum et cetera paribus undeam magnatus.
+
+# Features
+
+## Columns and Boxes
+
+:::: {.columns}
+::: {.column width="40%"}
+A wide column
+:::
+
+::: {.column width="30%"}
+A narrower column
+:::
+
+::: {.column width="20%"}
+A narrowest column
+:::
+::::
+
+::: {.r-frame}
+And boxed text
+:::
+
+## Beautiful Math
+
+In Euclidean space, it can be shown that the Christoffel symbols of the second kind are equivalent to:
+
+$${\Gamma^k}_{ij} = \frac{\partial {\bf{e}}_i}{\partial x^j} \cdot {\bf{e}}^k = \frac{\partial \bf{e}_i}{\partial x^j} \cdot g^{km} {\bf{e}}_m .$$
+
+Christoffel symbols of the first kind can then be found via index lowering:
+
+::: {.hidden}
+$$
+ \def\gmk{g_{mk}}
+ \def\bolde#1#2{{{{\bf{e}}_{#1}}^{#2}}}
+$$
+:::
+
+$$
+\begin{aligned}
+\Gamma_{kij} &= \Gamma^m_{ij}\gmk \\
+&= \frac{\partial \bolde{i}{}}{\partial x^j} \cdot \bolde{}{m} \gmk \\
+&= \frac{\partial \bolde{i}{}}{\partial x^j} \cdot \bolde{k}{}.
+\end{aligned}
+$$
+
+which also provides a neat place to hide $\LaTeX$ macros.
+
+## Lists
+
+- These items
+- are not numbered
+- and neither should your happy moments be.
+
+1. These items
+2. Are numbered
+3. As may the sources of your worries be.
+
+
+## Pictures and Citations
+
+![Look how easy it is to embed an image from "Ten simple rules for how you can help make your group a better place as a graduate student or postdoc" [@Rillig2022] and add a caption. I'd rather call them "ways to contribute"!](img/tenrules.png)
+
+## Code windows
+
+My last slide deck was built in Quarto using Reveal.js!
+
+:::: {.columns}
+::: {.column width="50%"}
+```{.markdown}
+## Overview
+
+![From "Ten simple rules for how you can help make your group a better place as a graduate student or postdoc" [@Rillig2022]. I'd rather call them "ways to contribute"!](tenrules.PNG)
+
+# Mindset
+
+## Try changing things!
+
+> It is as simple as not taking for granted how things are currently, and asking how they can be better.
+
+- See something annoying / missing? Ask how you might fix it.
+- Little improvements matter -- they build up over time.
+- Keep your PI in the loop -- some things _can't_ be changed.
+
+::: {.r-frame}
+- Time cost: low to medium
+- Benefit: feeling "ownership"!
+:::
+
+## Be open
+
+> If you are open to new things, new opportunities might also open up to you, and you contribute actively to a very positive aspect of lab culture that cannot be prescribed.
+
+- Have you seen something elsewhere? Why not try it here?
+- Hear out your lab-mates when their viewpoints or experiences differ from yours.
+
+::: {.r-frame}
+- Time cost: low to medium
+- Benefit: new insights and opportunities
+:::
+```
+:::
+
+::: {.column width="50%"}
+![](img/slide_display.png)
+:::
+::::
+
+## Acknowledgements
+
+## Reference

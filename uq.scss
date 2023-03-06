@@ -1,0 +1,35 @@
+/*-- scss:defaults --*/
+
+// colors
+/* $presentation-heading-color: rgba(255,255,255,0.99) !default; */
+/* $presentation-heading-bg: rgba(146, 6, 240, 0.99) !default; */
+
+/*-- scss:mixins --*/
+
+@mixin violet-cutout-section-slide($bgimg, $width: 50vw) {
+  data-background-color: #51247A;
+  data-background-image: "img/corner_uqviolet.svg", "img/swirl_uqviolet.svg", "img/uq_logo0.svg", $bgimg;
+  data-background-position: $width bottom, right bottom, right 3% top, $width bottom;
+  data-background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  data-background-size: 15% auto, 15% auto, 18% 12%, contain;
+}
+
+/*-- scss:rules --*/
+
+#title-slide {
+    text-align: left;
+  
+    .quarto-title-authors {
+      justify-content: left;
+      color: white;
+    
+      .quarto-title-author { // optional, test it for yourself
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+      }
+    }
+  }
+  /* sec styling */
+.sec1 {
+  @include violet-cutout-section-slide("img/htmlsplash.jpg") }
