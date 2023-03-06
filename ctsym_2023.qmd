@@ -34,11 +34,20 @@ editor:
 - Identify broad principles for reproducibility
 - Find something to work on today!
 
+## A Buffet Tasting
+
+![](img/buffet-unsplash.jpg)
+
+> There are many paths toward reproducible research, and you shouldn’t try to change all aspects of your current practices all at once.
+> Identify one weakness, adopt an improved approach, refine that a bit, and then move on to the next thing. [@bromanrr]
+
+[[(Image source)](https://unsplash.com/photos/vJsj-hgOEG0)]{.smalltext .absolute bottom=0 left=0}
+
 ## Every Researcher's Nightmare
 
 :::: {.columns}
 ::: {.column width="50%"}
-![The originally reported structure of MsbA (purple) was inconsistent with the reported structure of Sav1866 (green), as shown on the left. This led to an erroneous inversion in MsbA being identified and corrected, leading to much more consistent structures (right) ... and three retractions from _Science_.](nightmare.gif)
+![An erroneous inversion in MsbA (green, left) was identified and corrected, leading to much more consistent structures (right) ... and three retractions from _Science_.](nightmare.gif)
 :::
 
 ::: {.column width="50%"}
@@ -56,9 +65,32 @@ editor:
 
 What is reproducibility, and why do we struggle with it?
 
-[[Image source](https://unsplash.com/photos/8OyKWQgBsKQ)]{.aside}
+[[(Image source)](https://unsplash.com/photos/8OyKWQgBsKQ)]{.smalltext}
 
+## Working Definitions
 
+![](img/reproducible-definition-grid.svg){width=700px height=525px}
+
+[Definitions of reproducibility by The Turing Way, 
+[(link)](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html),
+DOI: 10.5281/zenodo.7684733.
+This illustration is created by Scriberia with the Turing Way community.
+Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807.]{.smalltext .absolute bottom=30 left=0}
+
+## Benefits of Reproducibility
+
+![](img/reasons-reproducibility.png)
+[Benefits of reproducibility by The Turing Way, 
+[(link)](https://the-turing-way.netlify.app/reproducible-research/overview/overview-benefit.html),
+DOI: 10.5281/zenodo.7684733.]{.smalltext .absolute bottom=30 left=0}
+
+## Reflection Exercise 1
+
+What barriers to reproducibility have you encountered?
+
+Navigate to `https://hackmd.io/@srtee/ctcms-2023-repro/edit` ...
+
+## {background-iframe="https://hackmd.io/\@srtee/ctcms-2023-repro/edit" background-interactive=true}
 
 # Template-y stuff {visibility=hidden}
 ## Software Requirements
