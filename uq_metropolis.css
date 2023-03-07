@@ -395,6 +395,26 @@
  .cutout1 p { width: 65%; }
 
 /* smalltext */
+
+.reveal .hide-title h2 {
+    visibility: hidden;
+}
+
  .reveal .smalltext {
      font-size: 0.5em;
 }
+
+.reveal .smallertext {
+    font-size: smaller;
+}
+
+.reveal .morepad {
+    padding: 10px;
+}
+
+/* illum-initial */
+ .reveal .illum-initial h3::first-letter {
+    font-size: larger;
+    font-weight: bold;
+    color: var(--uqviolet);
+ }

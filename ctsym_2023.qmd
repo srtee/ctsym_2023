@@ -39,7 +39,7 @@ editor:
 ![](img/buffet-unsplash.jpg)
 
 > There are many paths toward reproducible research, and you shouldn’t try to change all aspects of your current practices all at once.
-> Identify one weakness, adopt an improved approach, refine that a bit, and then move on to the next thing. [@bromanrr]
+> Identify one weakness, adopt an improved approach, refine that a bit, and then move on to the next thing.  [@bromanrr]{.smalltext}
 
 [[(Image source)](https://unsplash.com/photos/vJsj-hgOEG0)]{.smalltext .absolute bottom=0 left=0}
 
@@ -51,7 +51,7 @@ editor:
 :::
 
 ::: {.column width="50%"}
-> When he investigated, Chang was horrified to discover that a homemade data-analysis program had flipped two columns of data, inverting the electron-density map from which his team had derived the final protein structure. Unfortunately, his group had used the program to analyze data for other proteins. [@nightmare]
+> When he investigated, Chang was horrified to discover that a homemade data-analysis program had flipped two columns of data, inverting the electron-density map from which his team had derived the final protein structure. Unfortunately, his group had used the program to analyze data for other proteins. [@nightmare]{.smalltext}
 :::
 ::::
 
@@ -84,13 +84,145 @@ Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807.]{.smalltext .absolu
 [(link)](https://the-turing-way.netlify.app/reproducible-research/overview/overview-benefit.html),
 DOI: 10.5281/zenodo.7684733.]{.smalltext .absolute bottom=30 left=0}
 
+## Barriers to Reproducibility
+
+:::: {.columns}
+::: {.column width="30%"}
+![](img/feynman-13184-portrait-mini-2x.webp){width=100%}
+:::
+
+::: {.column width="70%"}
+>We have a habit in writing articles published in scientific journals to make the work as finished as possible, to cover all the tracks, to not worry about the blind alleys or to describe how you had the wrong idea first, and so on. So there isn’t any place to publish, in a dignified manner, what you actually did in order to get to do the work, although, there has been in these days, some interest in this kind of thing. [@feynman]{.smalltext}
+:::
+::::
+
 ## Reflection Exercise 1
 
 What barriers to reproducibility have you encountered?
 
 Navigate to `https://hackmd.io/@srtee/ctcms-2023-repro/edit` ...
 
-## {background-iframe="https://hackmd.io/\@srtee/ctcms-2023-repro/edit" background-interactive=true}
+## HackMD {.hide-title background-iframe="https://hackmd.io/\@srtee/ctcms-2023-repro/edit" background-interactive=true}
+
+## Overlapping concepts
+
+:::: {.columns}
+::: {.column width="40%"}
+- Open Science
+- FAIR Principles
+  - Findable, Accessible, Interoperable, Reusable
+- Data Management Plan
+  - [UQ Library DMP Checklist](https://guides.library.uq.edu.au/for-researchers/research-data-management-plan/checklist)
+:::
+
+::: {.column width="60%"}
+![](img/NIH_sharing.png)
+[NIH DMS Policy](https://sharing.nih.gov/data-management-and-sharing-policy/about-data-management-and-sharing-policies/data-management-and-sharing-policy-overview){.smalltext}
+
+![](img/fairmat.webp){.morepad}
+[@fairmat]{.smalltext}
+:::
+::::
+
+# Reproducibility: ABCDE
+
+## Five Reproducibility Steps {.illum-initial auto-animate=true}
+
+. . .
+
+### Automate
+
+. . .
+
+[Capture what you do so you can repeat it in one step -- then capture multiple steps in one!]{.smallertext}
+
+. . .
+
+### Backup
+
+. . .
+
+[Keep secure data copies in multiple locations]{.smallertext}
+
+. . .
+
+### Control
+
+. . .
+
+[Track changes in what you do and automate with version control]{.smallertext}
+
+. . .
+
+### Document
+
+. . .
+
+[Describe and explain what you do with notebooks]{.smallertext}
+
+. . .
+
+### Export
+
+. . .
+
+[Capture your environment, licence your data, and make your work citeable]{.smallertext}
+
+## A Typical Computational Workflow {.illum-initial auto-animate=true}
+
+### Automate
+### Backup
+### Control
+### Document
+### Export
+
+::: {.absolute top=100px left=100px}
+```{dot}
+digraph {
+  rankdir=TD;
+  1 [label="Prototyping"];
+  2 [label="Production"];
+  3 [label="Processing"];
+  4 [label="Publication"];
+  1->2; 2->3; 3->4; 3->1;
+  {rank="same"; 3; 4}
+}
+```
+:::
+
+::: {.absolute top=200px left=650px width=300px}
+Where you are will influence where you can start!
+:::
+
+## Where To Start (For Example!) {.illum-initial}
+
+### Automate
+### Backup
+### Control
+### Document
+### Export
+
+::: {.absolute top=100px left=100px}
+```{dot}
+digraph {
+  rankdir=TD;
+  1 [label=<Prototyping <FONT COLOR="RED">C, D</FONT>>];
+  2 [label=<Production <FONT COLOR="RED">A</FONT>>];
+  3 [label=<Processing <FONT COLOR="RED">A, D, E</FONT>>];
+  4 [label="Publication"];
+  1->2 [label=<<FONT COLOR="RED">B, E</FONT>>]; 
+  2->3 [label=<<FONT COLOR="RED">B, C</FONT>>]; 
+  3->4; 3->1;
+  {rank="same"; 3; 4}
+}
+```
+:::
+
+::: {.absolute top=200px left=650px width=300px}
+Where you are will influence where you can start!
+:::
+
+
 
 # Template-y stuff {visibility=hidden}
 ## Software Requirements
