@@ -262,13 +262,13 @@ Synergizes with version control.
 5. What _separator_ characters go between metadata?
 6. Will I track different _versions_ of files?
 7. Now _write down_ your naming convention pattern and some examples ...
-8. ... and save it in a `README.md` in your project folder.
+8. ... and save it in a `NAMES.md` in your project folder.
 
 [[@filename8steps], CC-BY 4.0]{.smalltext}
 
 ## Eight Step Filename Convention
 
-```markdown
+```{.markdown filename="NAMES.md"}
 _Files_: solvent trajectory DCD files
 _Metadata_: potential difference, non-equilibrium force, trajectory date
 _Encoding_: "V00" = 0.0 volts (2-pad), 
@@ -433,6 +433,37 @@ Sorted order:
 # Automate 
 
 ## Automating single steps
+
+## Automating a workflow {.smallertext}
+
+Signac example:
+
+```{.python filename="project.py"}
+lmp="$HOME/.local/bin/lmp_mpi"
+@Project.pre.isfile('start.data')
+@Project.post.isfile('restart.file.1')
+@Project.operation(cmd=True)
+def first_run(job):
+    return f'{lmp} -in lammps.input -var if_restart 0 ... '
+
+@Project.pre.isfile('restart.file.1')
+@Project.post.isfile('final.data')
+@Project.operation(cmd=True)
+def restart_run(job):
+    return f'{lmp} -in lammps.input -var if_restart 1 ...'
+```
+
+```{.text filename="lammps.input"}
+...
+if "${if_restart} == 0" then "read_data start.data"
+if "${if_restart} == 1" then "read_restart restart.file.1"
+...
+```
+
+```{.shell filename="shell commands"}
+$ python3 project.py status
+$ python3 project.py submit -o run_cpm [options]
+```
 
 ## Acknowledgements
 
