@@ -412,6 +412,11 @@
     padding: 10px;
 }
 
+.reveal .lesslinespace p {
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
 /* illum-initial */
  .reveal .illum-initial h3::first-letter {
     font-size: larger;

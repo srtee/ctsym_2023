@@ -158,7 +158,7 @@ Navigate to `https://hackmd.io/@srtee/ctcms-2023-repro/edit` ...
 
 . . .
 
-[Describe and explain what you do with notebooks]{.smallertext}
+[Name things well and explain yourself with notebooks]{.smallertext}
 
 . . .
 
@@ -221,6 +221,220 @@ digraph {
 ::: {.absolute top=200px left=650px width=300px}
 Where you are will influence where you can start!
 :::
+
+## Backup -- 3-2-1 {.illum-initial}
+
+:::: {.columns}
+::: {.column width=50%}
+### 3 copies of data, with
+
+### 2 on different media on-site and
+
+### 1 backup copy off-site
+:::
+::: {.smallertext .column width=50%}
+::::: {.callout-note icon=false}
+## Example
+Work desktop + external HDD + RDM or GitHub (small files only!)
+:::::
+:::
+::::
+
+::: {.smallertext}
+Make a _regular plan_! Helpful software: Rsync, Nextcloud, Syncthing
+
+Synergizes with version control.
+:::
+
+![](img/data_crash.png)
+[[Image Source](https://theupturnedmicroscope.com/comic/flash-comic-february-2016/)]{.smalltext}
+
+
+# Documenting and Organization
+
+## Eight Step Filename Convention
+
+1. What _files_ will this cover?
+2. What _metadata_ am I tracking?
+3. Will I _encode_ or abbreviate the metadata?
+4. What _order_ should I list metadata in?
+5. What _separator_ characters go between metadata?
+6. Will I track different _versions_ of files?
+7. Now _write down_ your naming convention pattern and some examples ...
+8. ... and save it in a `README.md` in your project folder.
+
+[[@filename8steps], CC-BY 4.0]{.smalltext}
+
+## Eight Step Filename Convention
+
+```markdown
+_Files_: solvent trajectory DCD files
+_Metadata_: potential difference, non-equilibrium force, trajectory date
+_Encoding_: "V00" = 0.0 volts (2-pad), 
+"F040" = 40 LAMMPS force units (3-pad), ISO8601 dates (YYYYMMDD)
+_Order_ and _separator_: volts, force, date, separated with _
+_Versions_: maybe during postprocessing I will combine
+dated partial trajectories into a "full" trajectory?
+
+_Final convention_:
+"V"vv_"F"fff_YYYYMMDD.dcd *or* "V"vv_"F"fff_full.dcd
+
+_Examples_:
+V00_F040_20230415.dcd
+(0.0 V, force 40 LAMMPS units, date 2023-04-15)
+V25_F100_full.dcd
+(2.5 V, force 100 LAMMPS units, combined from over multiple dates)
+```
+
+[[@filename8steps], CC-BY 4.0]{.smalltext}
+
+## How To Name Files {.smallertext}
+
+:::: {.columns}
+::: {.column width=30%}
+![](img/drakebling.jpg)
+:::
+
+::: {.column width=70%}
+[.]{.smalltext color=#ffffff}
+
+
+NO:
+
+- `myabstract.docx`
+- `Pictures of Space.jpg`
+- `figure 1.png`
+- `MwpktrimportantfinalFINAL.pdf`
+
+YES:
+
+- `2021-02-16_ctcms-abstract.docx`
+- `better-pictures-of-space.jpg`
+- `fig01_scatterplot-coffee-vs-paper-length.png`
+- `1986-01-28_challenger-o-rings_raw-data.txt`
+:::
+::::
+
+[[@howtonamethings]]{.smalltext}
+
+## Three Principles for (File) Names {auto-animate="true"}
+
+- Machine readable
+  - "glob-friendly" using delimiters, splitting filenames auto-returns metadata
+- Human readable
+  - make a "slug" -- two or three word description of file content
+  - alternate dashes and underscores: `fig01_intro-pic.png`, `fig02_charge-vs-v.png`
+- Sorts well
+  - Order metadata from most to least important
+  - Pad numbers and use YYYY-MM-DD dates (ISO 8601)
+
+[[@howtonamethings]]{.smalltext}
+
+## Three Principles for (File) Names {auto-animate="true"}
+
+- Sorts well
+  - Order metadata from most to least important
+  - Pad numbers and use YYYY-MM-DD dates (ISO 8601)
+
+::: {.columns .smallertext .lesslinespace}
+:::: {.column width=30%}
+::::: {.callout-note icon=false}
+## Padding numbers, done right:
+Sorted order:
+
+`01_read-trajectories.py`
+
+`02_calc-msd.py`
+
+`...`
+
+`10_final-figs.py`
+
+:::::
+
+::::: {.callout-warning icon=false}
+## Whoops!
+Sorted order:
+
+`10_final-figs.py`
+
+`...`
+
+`1_read-trajectories.py`
+
+`2_calc-msd.py`
+
+`...`
+
+:::::
+::::
+
+:::: {.column width=60%}
+::::: {.callout-note icon=false}
+## ISO dates, done right:
+Sorted order:
+
+`2023-03-11_traj.dcd`
+
+`2023-03-14_traj.dcd`
+
+`2023-04-01_traj.dcd`
+
+`2023-04-11_traj.dcd`
+
+:::::
+
+::::: {.callout-warning icon=false}
+## Whoops!
+
+:::::: {.columns}
+::::::: {.column width=50%}
+Sorted order:
+
+`Apr11_traj.dcd`
+
+`Apr1_traj.dcd`
+
+`Mar11_traj.dcd`
+
+`Mar14_traj.dcd`
+
+`...`
+
+:::::::
+
+::::::: {.column width=50%}
+Sorted order:
+
+`traj_1-4.dcd`
+
+`traj_11-3.dcd`
+
+`traj_11-4.dcd`
+
+`traj_14-3.dcd`
+
+`...`
+
+:::::::
+[.]{.smalltext color=#ffffff}
+::::::
+
+:::::
+
+::::
+
+:::
+
+[[@howtonamethings]]{.smalltext}
+
+## Directory Structures
+
+## Using Notebooks
+
+# Automate 
+
+## Automating single steps
 
 
 
