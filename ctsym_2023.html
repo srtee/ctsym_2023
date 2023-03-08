@@ -422,7 +422,7 @@ Shern Tee
     </div>
 </div>
 
-  <p class="date">3/7/23</p>
+  <p class="date">3/8/23</p>
 </section><section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Table of contents</h2>
@@ -432,6 +432,7 @@ Shern Tee
 <li><a href="#/reproducibility-abcde" id="/toc-reproducibility-abcde">Reproducibility: ABCDE</a></li>
 <li><a href="#/documenting-and-organization" id="/toc-documenting-and-organization">Documenting and Organization</a></li>
 <li><a href="#/automate-3" id="/toc-automate-3">Automate</a></li>
+<li><a href="#/control-and-export" id="/toc-control-and-export">Control and Export</a></li>
 </ul>
 </nav>
 </section>
@@ -715,12 +716,16 @@ Shern Tee
 <li>What <em>separator</em> characters go between metadata?</li>
 <li>Will I track different <em>versions</em> of files?</li>
 <li>Now <em>write down</em> your naming convention pattern and some examples …</li>
-<li>… and save it in a <code>README.md</code> in your project folder.</li>
+<li>… and save it in a <code>NAMES.md</code> in your project folder.</li>
 </ol>
 <p><span class="smalltext"><span class="citation" data-cites="filename8steps">(<a href="#/reference" role="doc-biblioref" onclick="">Briney 2020</a>)</span>, CC-BY 4.0</span></p>
 </section>
 <section id="eight-step-filename-convention-1" class="slide level2">
 <h2>Eight Step Filename Convention</h2>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>NAMES.md</strong></pre>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a>_Files_: solvent trajectory DCD files</span>
 <span id="cb1-2"><a href="#cb1-2"></a>_Metadata_: potential difference, non-equilibrium force, trajectory date</span>
 <span id="cb1-3"><a href="#cb1-3"></a>_Encoding_: "V00" = 0.0 volts (2-pad), </span>
@@ -737,6 +742,7 @@ Shern Tee
 <span id="cb1-14"><a href="#cb1-14"></a>(0.0 V, force 40 LAMMPS units, date 2023-04-15)</span>
 <span id="cb1-15"><a href="#cb1-15"></a>V25_F100_full.dcd</span>
 <span id="cb1-16"><a href="#cb1-16"></a>(2.5 V, force 100 LAMMPS units, combined from over multiple dates)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p><span class="smalltext"><span class="citation" data-cites="filename8steps">(<a href="#/reference" role="doc-biblioref" onclick="">Briney 2020</a>)</span>, CC-BY 4.0</span></p>
 </section>
 <section id="how-to-name-files" class="slide level2 smallertext">
@@ -871,17 +877,129 @@ Shern Tee
 </section>
 <section id="directory-structures" class="slide level2">
 <h2>Directory Structures</h2>
-</section>
+
+<img data-src="img/gin-and-tonic.png" class="morepad margin-caption r-stretch quarto-figure-center"><p class="caption">The “GIN-Tonic” research folder structure standard <span class="citation" data-cites="ginandtonic">(<a href="#/reference" role="doc-biblioref" onclick="">Colomb et al. 2021</a>)</span>. See <a href="https://f1000research.com/posters/7-1965">YODA</a> or <a href="https://drivendata.github.io/cookiecutter-data-science/">Cookiecutter</a> as alternatives.</p></section>
 <section id="using-notebooks" class="slide level2">
 <h2>Using Notebooks</h2>
-</section></section>
+
+<img data-src="img/jupyter.webp" class="margin-caption r-stretch quarto-figure-center"><p class="caption">Use Jupyter Notebooks to create reports that both contain and explain your code. A BinderHub (such as <a href="https://mybinder.org/">MyBinder</a>) will deploy environments for notebooks in a Git repository, and let anyone rerun them online!</p></section></section>
 <section>
 <section id="automate-3" class="title-slide slide level1 center">
 <h1>Automate</h1>
 
 </section>
-<section id="automating-single-steps" class="slide level2">
-<h2>Automating single steps</h2>
+<section id="automating-and-simplifying-single-steps" class="slide level2 smallertext">
+<h2>Automating (and simplifying) single steps</h2>
+<p>Goal: Capture a procedure and make it repeatable in a simple, short step</p>
+<ol type="1">
+<li>Get a terminal
+<ul>
+<li>WSL is a fully-featured Linux environment in Windows!</li>
+</ul></li>
+<li>Swap graphical-only for text-based procedures
+<ul>
+<li>Typing can be faster than “mousing”</li>
+<li>How would you “export” or “save” a series of mouse points, drags and clicks?</li>
+<li>Text files are much easier to (1) share (2) version control</li>
+<li>The ASCII <code>.txt</code> format will outlive us all</li>
+<li>Markdown formatting is easy to read in plaintext</li>
+<li>Integrated Development Environments (IDEs) give the best of both worlds: text input and graphical output!</li>
+</ul></li>
+</ol>
+</section>
+<section id="from-graphical-only-to-text-based" class="slide level2">
+<h2>From Graphical-Only to Text-Based</h2>
+<p>(P): Python package</p>
+<table>
+<thead>
+<tr class="header">
+<th>Activity</th>
+<th>Graphical</th>
+<th>Text-based</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Documents</td>
+<td>MS Word</td>
+<td>LaTeX, Markdown, Quarto</td>
+</tr>
+<tr class="even">
+<td>Tables</td>
+<td>MS Excel</td>
+<td>Awk, (P) NumPy, (P) Pandas</td>
+</tr>
+<tr class="odd">
+<td>Graphs</td>
+<td>MS Excel</td>
+<td>(P) Matplotlib, Gnuplot, RStudio</td>
+</tr>
+<tr class="even">
+<td>Presentations</td>
+<td>MS PowerPoint</td>
+<td>LaTeX Beamer, Quarto</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="automating-plots" class="slide level2">
+<h2>Automating Plots</h2>
+
+<img data-src="img/spyder_plots.png" class="margin-caption r-stretch quarto-figure-center"><p class="caption">Plotting with Python in the Spyder IDE. Python lets me generate multiple plots in a single for loop; you can (just about) see their consistent styling (far right vertical region).</p></section>
+<section id="simplifying-presentations" class="slide level2">
+<h2>Simplifying Presentations</h2>
+
+<img data-src="img/quarto.png" class="margin-caption r-stretch quarto-figure-center"><p class="caption">Editing this presentation with Quarto in the VSCode IDE. No more worrying about getting that picture <em>exactly</em> centered, or clicking through multiple directories to find it!</p></section>
+<section id="automating-a-workflow" class="slide level2">
+<h2>Automating a workflow</h2>
+<p><a href="https://the-turing-way.netlify.app/reproducible-research/make/make-examples.html">TTW Make By Examples</a></p>
+</section>
+<section id="automating-a-workflow-1" class="slide level2 smallertext">
+<h2>Automating a workflow</h2>
+<p>Signac example:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>project.py</strong></pre>
+</div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>lmp<span class="op">=</span><span class="st">"$HOME/.local/bin/lmp_mpi"</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="at">@Project.pre.isfile</span>(<span class="st">'start.data'</span>)</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="at">@Project.post.isfile</span>(<span class="st">'restart.file.1'</span>)</span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="at">@Project.operation</span>(cmd<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="kw">def</span> first_run(job):</span>
+<span id="cb2-6"><a href="#cb2-6"></a>    <span class="cf">return</span> <span class="ss">f'</span><span class="sc">{</span>lmp<span class="sc">}</span><span class="ss"> -in lammps.input -var if_restart 0 ... '</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a></span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="at">@Project.pre.isfile</span>(<span class="st">'restart.file.1'</span>)</span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="at">@Project.post.isfile</span>(<span class="st">'final.data'</span>)</span>
+<span id="cb2-10"><a href="#cb2-10"></a><span class="at">@Project.operation</span>(cmd<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="kw">def</span> restart_run(job):</span>
+<span id="cb2-12"><a href="#cb2-12"></a>    <span class="cf">return</span> <span class="ss">f'</span><span class="sc">{</span>lmp<span class="sc">}</span><span class="ss"> -in lammps.input -var if_restart 1 ...'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>lammps.input</strong></pre>
+</div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a href="#cb3-1"></a>...</span>
+<span id="cb3-2"><a href="#cb3-2"></a>if "${if_restart} == 0" then "read_data start.data"</span>
+<span id="cb3-3"><a href="#cb3-3"></a>if "${if_restart} == 1" then "read_restart restart.file.1"</span>
+<span id="cb3-4"><a href="#cb3-4"></a>...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>shell commands</strong></pre>
+</div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a href="#cb4-1"></a>$ python3 project.py status</span>
+<span id="cb4-2"><a href="#cb4-2"></a>$ python3 project.py submit -o run_cpm [options]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section></section>
+<section>
+<section id="control-and-export" class="title-slide slide level1 center">
+<h1>Control and Export</h1>
+
+</section>
+<section id="version-control" class="slide level2">
+<h2>Version Control</h2>
+<p><a href="https://the-turing-way.netlify.app/reproducible-research/vcs.html">TTW on Version Control</a></p>
+<p><a href="https://cosimameyer.com/post/git-the-perks-of-collaboration-and-version-control/">Cosima Meyer’s blog post</a></p>
 </section>
 <section id="acknowledgements" class="slide level2">
 <h2>Acknowledgements</h2>
@@ -901,6 +1019,9 @@ Broman, Karl. 2023. <span>“Initial Steps Towards Reproducible Research.”</sp
 </div>
 <div id="ref-howtonamethings" class="csl-entry" role="doc-biblioentry">
 Bryan, Jenny. 2015. <span>“Naming Things (Reproducible Science Workshop).”</span> <a href="https://speakerdeck.com/jennybc/how-to-name-files" class="uri">https://speakerdeck.com/jennybc/how-to-name-files</a>.
+</div>
+<div id="ref-ginandtonic" class="csl-entry" role="doc-biblioentry">
+Colomb, Julien, Thorsten Arendt, Keisuke Sehara, and The Gin-Tonic team. 2021. <span>“Towards a Standardized Research Folder Structure.”</span> <a href="https://genr.eu/wp/towards-a-standardized-research-folder-structure/" class="uri">https://genr.eu/wp/towards-a-standardized-research-folder-structure/</a>; Generation Research. <a href="https://doi.org/10.25815/WCY6-M233">https://doi.org/10.25815/WCY6-M233</a>.
 </div>
 <div id="ref-feynman" class="csl-entry" role="doc-biblioentry">
 Feynman, Richard P. 1965. <span>“Nobel Lecture.”</span> <a href="https://www.nobelprize.org/prizes/physics/1965/feynman/lecture/" class="uri">https://www.nobelprize.org/prizes/physics/1965/feynman/lecture/</a>; Nobel Prize Outreach AB 2023.
