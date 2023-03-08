@@ -318,23 +318,20 @@ YES:
 
 [[@howtonamethings]]{.smalltext}
 
-## Three Principles for (File) Names {auto-animate="true"}
+## Three Principles: Good (File) Names Are {auto-animate="true"}
 
-- Machine readable
-  - "glob-friendly" using delimiters, splitting filenames auto-returns metadata
-- Human readable
-  - make a "slug" -- two or three word description of file content
-  - alternate dashes and underscores: `fig01_intro-pic.png`, `fig02_charge-vs-v.png`
-- Sorts well
-  - Order metadata from most to least important
+- Machine readable: "glob-friendly"
+- Human readable: include a "slug"
+  - `fig01_intro-pic.png`, `fig02_charge-vs-v.png`
+    - underscores for machines, dashes for humans
+- Easily sorted: list metadata in search-y order
   - Pad numbers and use YYYY-MM-DD dates (ISO 8601)
 
 [[@howtonamethings]]{.smalltext}
 
-## Three Principles for (File) Names { auto-animate="true"}
+## Three Principles: Good (File) Names Are {auto-animate="true"}
 
-- Sorts well
-  - Order metadata from most to least important
+- Easily sorted: list metadata in search-y order
   - Pad numbers and use YYYY-MM-DD dates (ISO 8601)
 
 ::: {.columns .smallertext .lesslinespace}
