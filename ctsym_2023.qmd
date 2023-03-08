@@ -444,12 +444,9 @@ Goal: Capture a procedure and make it repeatable in a simple, short step
    - WSL is a fully-featured Linux environment in Windows!
 
 2. Swap graphical-only for text-based procedures
-   - Typing can be faster than "mousing"
-   - How would you "export" or "save" a series of mouse points, drags and clicks?
-   - Text files are much easier to (1) share (2) version control
-   - The ASCII `.txt` format will outlive us all
-   - Markdown formatting is easy to read in plaintext
-   - Integrated Development Environments (IDEs) give the best of both worlds: text input and graphical output!
+
+![In future, you might not have to choose ...](img/keymouse.png){width=50%}
+
 
 ## From Graphical-Only to Text-Based
 
