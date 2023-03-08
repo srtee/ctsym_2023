@@ -455,6 +455,10 @@ Goal: Capture a procedure and make it repeatable in a simple, short step
 | Graphs        | MS Excel      | (P) Matplotlib, Gnuplot, RStudio |
 | Presentations | MS PowerPoint | LaTeX Beamer, Quarto             |
 
+Integrated Development Environments (IDEs), like Spyder and VSCode, give you the best of all worlds: text-based inputs and graphical outputs
+
+[and good practice for your decaying mouse-pointer skills]{.smalltext}
+
 ## Automating Plots
 
 ![Plotting with Python in the Spyder IDE. Python lets me generate multiple plots in a single for loop; you can (just about) see their consistent styling (far right vertical region).](img/spyder_plots.png)
