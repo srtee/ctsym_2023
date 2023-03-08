@@ -428,11 +428,51 @@ Sorted order:
 
 ## Directory Structures
 
+![The "GIN-Tonic" research folder structure standard [@ginandtonic]. See [YODA](https://f1000research.com/posters/7-1965) or [Cookiecutter](https://drivendata.github.io/cookiecutter-data-science/) as alternatives.](img/gin-and-tonic.png){.morepad}
+
 ## Using Notebooks
+
+![Use Jupyter Notebooks to create reports that both contain and explain your code. A BinderHub (such as [MyBinder](https://mybinder.org/)) will deploy environments for notebooks in a Git repository, and let anyone rerun them online!](img/jupyter.webp)
 
 # Automate 
 
-## Automating single steps
+## Automating (and simplifying) single steps {.smallertext}
+
+Goal: Capture a procedure and make it repeatable in a simple, short step
+
+1. Get a terminal
+   - WSL is a fully-featured Linux environment in Windows!
+
+2. Swap graphical-only for text-based procedures
+   - Typing can be faster than "mousing"
+   - How would you "export" or "save" a series of mouse points, drags and clicks?
+   - Text files are much easier to (1) share (2) version control
+   - The ASCII `.txt` format will outlive us all
+   - Markdown formatting is easy to read in plaintext
+   - Integrated Development Environments (IDEs) give the best of both worlds: text input and graphical output!
+
+## From Graphical-Only to Text-Based
+
+(P): Python package
+
+| Activity      | Graphical     | Text-based                       |
+|---------------|---------------|----------------------------------|
+| Documents     | MS Word       | LaTeX, Markdown, Quarto          |
+| Tables        | MS Excel      | Awk, (P) NumPy, (P) Pandas       |
+| Graphs        | MS Excel      | (P) Matplotlib, Gnuplot, RStudio |
+| Presentations | MS PowerPoint | LaTeX Beamer, Quarto             |
+
+## Automating Plots
+
+![Plotting with Python in the Spyder IDE. Python lets me generate multiple plots in a single for loop; you can (just about) see their consistent styling (far right vertical region).](img/spyder_plots.png)
+
+## Simplifying Presentations
+
+![Editing this presentation with Quarto in the VSCode IDE. No more worrying about getting that picture _exactly_ centered, or clicking through multiple directories to find it!](img/quarto.png)
+
+## Automating a workflow
+
+[TTW Make By Examples](https://the-turing-way.netlify.app/reproducible-research/make/make-examples.html)
 
 ## Automating a workflow {.smallertext}
 
@@ -464,6 +504,14 @@ if "${if_restart} == 1" then "read_restart restart.file.1"
 $ python3 project.py status
 $ python3 project.py submit -o run_cpm [options]
 ```
+
+# Control and Export
+
+## Version Control
+
+[TTW on Version Control](https://the-turing-way.netlify.app/reproducible-research/vcs.html)
+
+[Cosima Meyer's blog post](https://cosimameyer.com/post/git-the-perks-of-collaboration-and-version-control/)
 
 ## Acknowledgements
 
