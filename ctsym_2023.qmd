@@ -159,7 +159,7 @@ Navigate to `https://hackmd.io/@srtee/ctcms-2023-repro/edit` ...
 
 . . .
 
-[Name things well and explain yourself with notebooks]{.smallertext}
+[Organize and name things well and explain yourself with notebooks]{.smallertext}
 
 . . .
 
@@ -251,7 +251,7 @@ Synergizes with version control.
 [[Image Source](https://theupturnedmicroscope.com/comic/flash-comic-february-2016/)]{.smalltext}
 
 
-# Documenting and Organization
+# Document (and Organize)
 
 ## Eight Step Filename Convention
 
