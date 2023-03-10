@@ -29,7 +29,7 @@ editor:
 
 ## Workshop Goals
 
-- Define reproducible research
+- Define data management and reproducible research
 - Identify broad principles for data management and reproducibility
 - Find something to work on today!
 
@@ -39,8 +39,6 @@ editor:
   data-background-repeat="no-repeat, no-repeat, no-repeat"
   data-background-size="15% auto, 15% auto, auto 50%"
 }
-
-What is data management and reproducibility, and why do we struggle with it?
 
 ::: {.smalltext}
 {{< include _scriberia.qmd >}}
@@ -81,16 +79,18 @@ When he investigated, Chang was horrified to discover that a homemade data analy
 
 ## Working Definitions
 
-![Definitions of reproducibility by The Turing Way, 
+![Definitions of reproducibility by The Turing Way 
 [(link)](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html),
-DOI: 10.5281/zenodo.7684733.
-This illustration is created by Scriberia with the Turing Way community.
-Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807.](img/reproducible-definition-grid.svg){width=700px height=525px}
+DOI: 10.5281/zenodo.7684733.](img/reproducible-definition-grid.svg){width=700px height=525px}
+
+::: {.smalltext}
+{{< include _scriberia.qmd >}}
+:::
 
 
 ## Benefits of Reproducibility
 
-![Benefits of reproducibility by The Turing Way, 
+![Benefits of reproducibility by The Turing Way 
 [(link)](https://the-turing-way.netlify.app/reproducible-research/overview/overview-benefit.html),
 DOI: 10.5281/zenodo.7684733.](img/reasons-reproducibility.png)
 
@@ -98,7 +98,7 @@ DOI: 10.5281/zenodo.7684733.](img/reasons-reproducibility.png)
 
 :::: {.columns}
 ::: {.column width="30%"}
-![](img/feynman-13184-portrait-mini-2x.webp){width=100%}
+![Richard Feynman (1918-1988), famous bongo player](img/feynman-13184-portrait-mini-2x.webp){width=100%}
 :::
 
 ::: {.column width="60%"}
@@ -133,7 +133,7 @@ Navigate to `https://hackmd.io/@srtee/ctcms-2023-repro/edit` ...
 
 ::: {.columns}
 :::: {.column width="40%"}
-![Grab what's useful!](img/ResearchTools.jpg)
+![You can't do it all at once -- grab what's useful!](img/ResearchTools.jpg){.smallertext}
 ::::
 
 :::: {.column width="50%"}
@@ -147,12 +147,16 @@ _Identify one weakness, adopt an improved approach, refine that a bit, and then 
 
 :::::
 
-[Buffet: [(Image source)](https://unsplash.com/photos/vJsj-hgOEG0)]{.smalltext}
+
+::: {.smalltext}
+{{< include _scriberia.qmd >}}
+Buffet image from Unsplash [(link)](https://unsplash.com/photos/vJsj-hgOEG0)
+:::
+
 
 ::::
 
 :::
-
 
 
 ## Resources and Communities
@@ -183,6 +187,10 @@ _Identify one weakness, adopt an improved approach, refine that a bit, and then 
   data-background-repeat="no-repeat, no-repeat, no-repeat"
   data-background-size="15% auto, 15% auto, auto 50%"
 }
+
+::: {.smalltext}
+{{< include _scriberia.qmd >}}
+:::
 
 ## Five Steps {.illum-initial auto-animate=true}
 
@@ -280,9 +288,20 @@ digraph {
 Where you are will influence where you can start!
 :::
 
-# Backup
+# Backup {.headertop
+  data-background-image="img/corner_uqviolet.svg, img/swirl_uqviolet.svg, img/data_crash.png"
+  data-background-position="left bottom, right bottom, center bottom 10%"
+  data-background-repeat="no-repeat, no-repeat, no-repeat"
+  data-background-size="15% auto, 15% auto, auto 30%"
+}
 
-## The 3-2-1 Rule {.illum-initial}
+[Webcomic by The Upturned Microscope [(link)](https://theupturnedmicroscope.com/comic/flash-comic-february-2016/)]{.smalltext}
+
+## The 3-2-1 Rule {.illum-initial
+  data-background-image="img/data_crash.png"
+  data-background-position="center bottom 10%"
+  data-background-size="auto 30%"
+}
 
 :::: {.columns}
 ::: {.column width=50%}
@@ -306,11 +325,20 @@ Make a _regular plan_! Helpful software: Rsync, Nextcloud, Syncthing
 Synergizes with version control.
 :::
 
-![](img/data_crash.png)
-[[Image Source](https://theupturnedmicroscope.com/comic/flash-comic-february-2016/)]{.smalltext}
+[Webcomic by The Upturned Microscope [(link)](https://theupturnedmicroscope.com/comic/flash-comic-february-2016/)]{.smalltext}
 
 
-# Document
+# Document {.headertop
+  data-background-image="img/corner_uqviolet.svg, img/swirl_uqviolet.svg, img/file-management-manual.jpg"
+  data-background-position="left bottom, right bottom, center bottom 10%"
+  data-background-repeat="no-repeat, no-repeat, no-repeat"
+  data-background-size="15% auto, 15% auto, auto 50%"
+}
+
+::: {.smalltext}
+{{< include _scriberia.qmd >}}
+:::
+
 
 ## Eight Step Filename Convention
 
@@ -487,7 +515,16 @@ Sorted order:
 
 ![The "GIN-Tonic" research folder structure standard [@ginandtonic]. See [YODA](https://f1000research.com/posters/7-1965) or [Cookiecutter](https://drivendata.github.io/cookiecutter-data-science/) as alternatives.](img/gin-and-tonic.png){.morepad}
 
-# Automate 
+# Automate {.headertop
+  data-background-image="img/corner_uqviolet.svg, img/swirl_uqviolet.svg, img/file-management-digital-no-text.jpg"
+  data-background-position="left bottom, right bottom, center bottom 10%"
+  data-background-repeat="no-repeat, no-repeat, no-repeat"
+  data-background-size="15% auto, 15% auto, auto 50%"
+}
+
+::: {.smalltext}
+{{< include _scriberia.qmd >}}
+:::
 
 ## Automating (and simplifying) single steps {.smallertext}
 
@@ -525,41 +562,24 @@ Integrated Development Environments (IDEs), like Spyder and VSCode, give you the
 
 ## Automating a workflow
 
-```{dot}
-digraph {
-  rankdir=TD;
-  1 [label="database"];
-  2 [label="gen scripts"];
-  3 [label="initial structures"];
-  4 [label="input settings"];
-  5 [label="MD package"];
-  6 [label="trajectories"];
-  7 [label="observables"];
-  8 [label="proc scripts"];
-  9 [label="vis scripts"];
-  10 [label="figures"];
-  11 [label="tables"];
-  12 [label="numbers"];
-  13 [label="paper.tex"];
-  14 [label="paper.pdf"];
-  1->3; 2->3; 3->5; 4->5; 5->6; 5->7; 6->8; 
-  7->9; 6->9; 9->10; 7->8; 8->11; 8->12;
-  10->14; 11->14; 12->14; 13->14;
-  {rank="same"; 1; 2; 4; 5}
-}
-```
+![After automating individual steps, you can fit them together into an automated workflow!](img/reproducible-pipeline-no-text.jpg){align=left}
 
-::: {.smallertext .absolute top=300px left=100px width=300px}
-Tools to try:
-
-(Python) Snakemake, FireWorks, Signac
-
-`make` ([TTW tutorial](https://the-turing-way.netlify.app/reproducible-research/make/make-examples.html))
+::: {.smalltext}
+{{< include _scriberia.qmd >}}
 :::
 
-## Automating a workflow {.smalltext}
+::: {.smallertext}
+Tools to try: (Python) Snakemake, FireWorks, Signac, `make` ([TTW tutorial](https://the-turing-way.netlify.app/reproducible-research/make/make-examples.html))
+:::
+
+
+## Automating a workflow
 
 Signac example:
+
+:::{.columns .smallertext}
+
+::::{.column width="50%"}
 
 ```{.python filename="project.py"}
 lmp="$HOME/.local/bin/lmp_mpi"
@@ -567,34 +587,80 @@ lmp="$HOME/.local/bin/lmp_mpi"
 @Project.post.isfile('restart.file.1')
 @Project.operation(cmd=True)
 def first_run(job):
-    return f'{lmp} -in lammps.input -var if_restart 0 ... '
+    return f'{lmp} -in lammps.input'
+      ' -var if_restart 0 ... '
 
 @Project.pre.isfile('restart.file.1')
 @Project.post.isfile('final.data')
 @Project.operation(cmd=True)
 def restart_run(job):
-    return f'{lmp} -in lammps.input -var if_restart 1 ...'
+    return f'{lmp} -in lammps.input'
+      ' -var if_restart 1 ... '
 ```
+
+::::
+
+::::{.column width="50%"}
 
 ```{.text filename="lammps.input"}
 ...
-if "${if_restart} == 0" then "read_data start.data"
-if "${if_restart} == 1" then "read_restart restart.file.1"
+if "${if_restart} == 0" &
+  then "read_data start.data"
+
+if "${if_restart} == 1" &
+  then "read_restart restart.file.1"
 ...
 ```
 
 ```{.shell filename="shell commands"}
 $ python3 project.py status
-$ python3 project.py submit -o run_cpm [options]
+$ python3 project.py submit \
+  -o run_cpm [options] ...
 ```
 
-# Control and Export
+::::
+:::
+
+## Readable and Reusable Code
+
+![Learn to write _readable code_, and even better, code that is easily _reusable_ in future!](img/ReadableCode.jpg)
+
+::: {.smalltext}
+{{< include _scriberia.qmd >}}
+:::
+
+# Control and Export {.headertop
+  data-background-image="img/corner_uqviolet.svg, img/swirl_uqviolet.svg, img/community-exchange.jpg"
+  data-background-position="left bottom, right bottom, center bottom 10%"
+  data-background-repeat="no-repeat, no-repeat, no-repeat"
+  data-background-size="15% auto, 15% auto, auto 50%"
+}
+
+::: {.smalltext}
+{{< include _scriberia.qmd >}}
+:::
 
 ## Version Control
 
-[TTW on Version Control](https://the-turing-way.netlify.app/reproducible-research/vcs.html)
+![Change things quickly knowing you can always retrieve past versions!](img/VersionControl.jpg)
 
-[Cosima Meyer's blog post](https://cosimameyer.com/post/git-the-perks-of-collaboration-and-version-control/)
+::: {.smalltext}
+{{< include _scriberia.qmd >}}
+
+[TTW guide on Version Control](https://the-turing-way.netlify.app/reproducible-research/vcs.html)
+:::
+
+## Git In One Slide
+
+![For files in your _working directory_ that you care about, you **add** them to Git's _staging area_. To save a version of your _staging area_, you **commit** it to your _local repository_, which you can **push** to a _remote repository_ (like GitHub) for backup and sharing. You can **clone** a remote repository to your local repository and **pull** updated changes from the remote; you can then **merge** changes into your working directory, **checkout** other commits to try out other versions, and **revert** or **reset** to try fixing trickier issues.](img/git_flow.png)
+
+::: {.smalltext}
+Image from [Cosima Meyer's blog post](https://cosimameyer.com/post/git-the-perks-of-collaboration-and-version-control/), which is also a great short guide.
+:::
+
+## Export your Environment
+
+
 
 ## Acknowledgements
 
