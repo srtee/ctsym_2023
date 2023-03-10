@@ -25,65 +25,74 @@ editor:
   render-on-save: true
 ---
 
-# Introduction
-
 ## About Me
 
 ## Workshop Goals
 
 - Define reproducible research
-- Identify broad principles for reproducibility
+- Identify broad principles for data management and reproducibility
 - Find something to work on today!
 
-## A Buffet Tasting
+# Data Management and Reproducibility {.headertop
+  data-background-image="img/corner_uqviolet.svg, img/swirl_uqviolet.svg, img/EvolutionOpenScience.jpg"
+  data-background-position="left bottom, right bottom, center bottom 20%"
+  data-background-repeat="no-repeat, no-repeat, no-repeat"
+  data-background-size="15% auto, 15% auto, auto 50%"
+}
 
-![](img/buffet-unsplash.jpg)
+What is data management and reproducibility, and why do we struggle with it?
 
-> There are many paths toward reproducible research, and you shouldn’t try to change all aspects of your current practices all at once.
-> Identify one weakness, adopt an improved approach, refine that a bit, and then move on to the next thing.  [@bromanrr]{.smalltext}
+::: {.smalltext}
+{{< include _scriberia.qmd >}}
+:::
 
-[[(Image source)](https://unsplash.com/photos/vJsj-hgOEG0)]{.smalltext .absolute bottom=0 left=0}
+## (Not) Managing Your Data
+
+![Does your hard drive look like this? (Mine does.)](img/rdm-storage.jpg)
+
+::: {.smalltext}
+{{< include _scriberia.qmd >}}
+:::
 
 ## Every Researcher's Nightmare
 
-:::: {.columns}
-::: {.column width="50%"}
+::: {.columns}
+:::: {.column width="50%"}
 ![An erroneous inversion in MsbA (green, left) was identified and corrected, leading to much more consistent structures (right) ... and three retractions from _Science_.](nightmare.gif)
-:::
-
-::: {.column width="50%"}
-> When he investigated, Chang was horrified to discover that a homemade data-analysis program had flipped two columns of data, inverting the electron-density map from which his team had derived the final protein structure. Unfortunately, his group had used the program to analyze data for other proteins. [@nightmare]{.smalltext}
-:::
 ::::
 
-# Research Reproducibility {.cutout1
-  data-background-color="var(--uqviolet)"
-  data-background-image="img/corner_uqviolet.svg, img/swirl_uqviolet.svg, img/uq_logo0.svg, img/htmlsplash.jpg"
-  data-background-position="50vw bottom, right bottom, right 3% top, 50vw bottom"
-  data-background-repeat="no-repeat, no-repeat, no-repeat, no-repeat"
-  data-background-size="15% auto, 15% auto, 18% 12%, cover"
-}
+:::: {.column width="45%"}
 
-What is reproducibility, and why do we struggle with it?
+
+::::: {.callout-note icon="false"}
+
+## [@nightmare]
+
+::: {style="text-align: justify; margin-right: 0.5em;"}
+When he investigated, Chang was horrified to discover that a homemade data analysis program had flipped two columns of data, inverting the electron-density map from which his team had derived the final protein structure. Unfortunately, his group had used the program to analyze data for other proteins.
+:::
+
+:::::
+::::
+:::
+
 
 [[(Image source)](https://unsplash.com/photos/8OyKWQgBsKQ)]{.smalltext}
 
 ## Working Definitions
 
-![](img/reproducible-definition-grid.svg){width=700px height=525px}
-
-[Definitions of reproducibility by The Turing Way, 
+![Definitions of reproducibility by The Turing Way, 
 [(link)](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html),
 DOI: 10.5281/zenodo.7684733.
 This illustration is created by Scriberia with the Turing Way community.
-Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807.]{.smalltext .absolute bottom=30 left=0}
+Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807.](img/reproducible-definition-grid.svg){width=700px height=525px}
+
 
 ## Benefits of Reproducibility
 
-![](img/reasons-reproducibility.png)
-[Benefits of reproducibility by The Turing Way, 
+![Benefits of reproducibility by The Turing Way, 
 [(link)](https://the-turing-way.netlify.app/reproducible-research/overview/overview-benefit.html),
-DOI: 10.5281/zenodo.7684733.]{.smalltext .absolute bottom=30 left=0}
+DOI: 10.5281/zenodo.7684733.](img/reasons-reproducibility.png)
 
 ## Barriers to Reproducibility
 
@@ -92,8 +101,19 @@ DOI: 10.5281/zenodo.7684733.]{.smalltext .absolute bottom=30 left=0}
 ![](img/feynman-13184-portrait-mini-2x.webp){width=100%}
 :::
 
-::: {.column width="70%"}
->We have a habit in writing articles published in scientific journals to make the work as finished as possible, to cover all the tracks, to not worry about the blind alleys or to describe how you had the wrong idea first, and so on. So there isn’t any place to publish, in a dignified manner, what you actually did in order to get to do the work, although, there has been in these days, some interest in this kind of thing. [@feynman]{.smalltext}
+::: {.column width="60%"}
+
+:::: {.callout-note icon="false"}
+
+## [@feynman]
+
+::: {style="text-align: justify; margin-right: 0.5em;"}
+We have a habit in writing articles published in scientific journals to make the work as finished as possible, to cover all the tracks, to not worry about the blind alleys or to describe how you had the wrong idea first, and so on.
+
+So there isn’t any place to publish, in a dignified manner, what you actually did in order to get to do the work, although, there has been in these days, some interest in this kind of thing.
+:::
+::::
+
 :::
 ::::
 
@@ -104,6 +124,38 @@ What barriers to reproducibility have you encountered?
 Navigate to `https://hackmd.io/@srtee/ctcms-2023-repro/edit` ...
 
 ## HackMD {.hide-title background-iframe="https://hackmd.io/\@srtee/ctcms-2023-repro/edit" background-interactive=true}
+
+## A Buffet Tasting {
+  data-background-image="img/buffet-unsplash.jpg"
+  data-background-position="center bottom 10%"
+  data-background-size="auto 30%"
+}
+
+::: {.columns}
+:::: {.column width="40%"}
+![Grab what's useful!](img/ResearchTools.jpg)
+::::
+
+:::: {.column width="50%"}
+
+::::: {.callout-note icon="false"}
+
+## [@bromanrr]
+
+_There are many paths toward reproducible research, and you shouldn’t try to change all aspects of your current practices all at once._
+_Identify one weakness, adopt an improved approach, refine that a bit, and then move on to the next thing._  
+
+:::::
+
+[Buffet: [(Image source)](https://unsplash.com/photos/vJsj-hgOEG0)]{.smalltext}
+
+::::
+
+:::
+
+
+
+## Resources and Communities
 
 ## Overlapping concepts
 
@@ -125,9 +177,14 @@ Navigate to `https://hackmd.io/@srtee/ctcms-2023-repro/edit` ...
 :::
 ::::
 
-# Reproducibility: ABCDE
+# Five Steps: ABCDE {.headertop
+  data-background-image="img/corner_uqviolet.svg, img/swirl_uqviolet.svg, img/EvolutionOpenScience.jpg"
+  data-background-position="left bottom, right bottom, center bottom 10%"
+  data-background-repeat="no-repeat, no-repeat, no-repeat"
+  data-background-size="15% auto, 15% auto, auto 50%"
+}
 
-## Five Reproducibility Steps {.illum-initial auto-animate=true}
+## Five Steps {.illum-initial auto-animate=true}
 
 . . .
 
@@ -159,7 +216,7 @@ Navigate to `https://hackmd.io/@srtee/ctcms-2023-repro/edit` ...
 
 . . .
 
-[Organize and name things well and explain yourself with notebooks]{.smallertext}
+[Organize and name things well]{.smallertext}
 
 . . .
 
@@ -223,7 +280,9 @@ digraph {
 Where you are will influence where you can start!
 :::
 
-## Backup -- 3-2-1 {.illum-initial}
+# Backup
+
+## The 3-2-1 Rule {.illum-initial}
 
 :::: {.columns}
 ::: {.column width=50%}
@@ -251,7 +310,7 @@ Synergizes with version control.
 [[Image Source](https://theupturnedmicroscope.com/comic/flash-comic-february-2016/)]{.smalltext}
 
 
-# Document (and Organize)
+# Document
 
 ## Eight Step Filename Convention
 
@@ -335,38 +394,6 @@ YES:
   - Pad numbers and use YYYY-MM-DD dates (ISO 8601)
 
 ::: {.columns .smallertext .lesslinespace}
-:::: {.column width=30%}
-::::: {.callout-note icon=false}
-## Padding numbers, done right:
-Sorted order:
-
-`01_read-trajectories.py`
-
-`02_calc-msd.py`
-
-`...`
-
-`10_final-figs.py`
-
-:::::
-
-::::: {.callout-warning icon=false}
-## Whoops!
-Sorted order:
-
-`10_final-figs.py`
-
-`...`
-
-`1_read-trajectories.py`
-
-`2_calc-msd.py`
-
-`...`
-
-:::::
-::::
-
 :::: {.column width=60%}
 ::::: {.callout-note icon=false}
 ## ISO dates, done right:
@@ -419,6 +446,39 @@ Sorted order:
 ::::::
 :::::
 ::::
+
+:::: {.column width=30%}
+::::: {.callout-note icon=false}
+## Padding numbers, done right:
+Sorted order:
+
+`01_read-trajectories.py`
+
+`02_calc-msd.py`
+
+`...`
+
+`10_final-figs.py`
+
+:::::
+
+::::: {.callout-warning icon=false}
+## Whoops!
+Sorted order:
+
+`10_final-figs.py`
+
+`...`
+
+`1_read-trajectories.py`
+
+`2_calc-msd.py`
+
+`...`
+
+:::::
+::::
+
 :::
 
 [[@howtonamethings]]{.smalltext}
@@ -426,10 +486,6 @@ Sorted order:
 ## Directory Structures
 
 ![The "GIN-Tonic" research folder structure standard [@ginandtonic]. See [YODA](https://f1000research.com/posters/7-1965) or [Cookiecutter](https://drivendata.github.io/cookiecutter-data-science/) as alternatives.](img/gin-and-tonic.png){.morepad}
-
-## Using Notebooks
-
-![Use Jupyter Notebooks to create reports that both contain and explain your code. A BinderHub (such as [MyBinder](https://mybinder.org/)) will deploy environments for notebooks in a Git repository, and let anyone rerun them online!](img/jupyter.webp)
 
 # Automate 
 
