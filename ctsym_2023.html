@@ -422,24 +422,19 @@ Shern Tee
     </div>
 </div>
 
-  <p class="date">3/8/23</p>
+  <p class="date">3/10/23</p>
 </section><section id="TOC">
 <nav role="doc-toc"> 
 <h2 id="toc-title">Table of contents</h2>
 <ul>
-<li><a href="#/introduction" id="/toc-introduction">Introduction</a></li>
-<li><a href="#/research-reproducibility" id="/toc-research-reproducibility">Research Reproducibility</a></li>
-<li><a href="#/reproducibility-abcde" id="/toc-reproducibility-abcde">Reproducibility: ABCDE</a></li>
-<li><a href="#/document-and-organize" id="/toc-document-and-organize">Document (and Organize)</a></li>
+<li><a href="#/data-management-and-reproducibility" id="/toc-data-management-and-reproducibility">Data Management and Reproducibility</a></li>
+<li><a href="#/five-steps-abcde" id="/toc-five-steps-abcde">Five Steps: ABCDE</a></li>
+<li><a href="#/backup-3" id="/toc-backup-3">Backup</a></li>
+<li><a href="#/document-3" id="/toc-document-3">Document</a></li>
 <li><a href="#/automate-3" id="/toc-automate-3">Automate</a></li>
 <li><a href="#/control-and-export" id="/toc-control-and-export">Control and Export</a></li>
 </ul>
 </nav>
-</section>
-<section>
-<section id="introduction" class="title-slide slide level1 center">
-<h1>Introduction</h1>
-
 </section>
 <section id="about-me" class="slide level2">
 <h2>About Me</h2>
@@ -447,18 +442,24 @@ Shern Tee
 <section id="workshop-goals" class="slide level2">
 <h2>Workshop Goals</h2>
 <ul>
-<li>Define reproducible research</li>
-<li>Identify broad principles for reproducibility</li>
+<li>Define data management and reproducible research</li>
+<li>Identify broad principles for data management and reproducibility</li>
 <li>Find something to work on today!</li>
 </ul>
 </section>
-<section id="a-buffet-tasting" class="slide level2">
-<h2>A Buffet Tasting</h2>
+<section>
+<section id="data-management-and-reproducibility" class="title-slide slide level1 headertop center" data-background-image="img/corner_uqviolet.svg, img/swirl_uqviolet.svg, img/EvolutionOpenScience.jpg" data-background-position="left bottom, right bottom, center bottom 20%" data-background-repeat="no-repeat, no-repeat, no-repeat" data-background-size="15% auto, 15% auto, auto 50%">
+<h1>Data Management and Reproducibility</h1>
+<div class="smalltext">
+<p>This illustration is created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. DOI: <a href="https://doi.org/10.5281/zenodo.3332807">10.5281/zenodo.3332807</a></p>
+</div>
+</section>
+<section id="not-managing-your-data" class="slide level2">
+<h2>(Not) Managing Your Data</h2>
 
-<img data-src="img/buffet-unsplash.jpg" class="margin-caption r-stretch"><blockquote>
-<p>There are many paths toward reproducible research, and you shouldn’t try to change all aspects of your current practices all at once. Identify one weakness, adopt an improved approach, refine that a bit, and then move on to the next thing. <span class="smalltext"><span class="citation" data-cites="bromanrr">Broman (<a href="#/reference" role="doc-biblioref" onclick="">2023</a>)</span></span></p>
-</blockquote>
-<p><span class="smalltext absolute" style="left: 0px; bottom: 0px; "><a href="https://unsplash.com/photos/vJsj-hgOEG0">(Image source)</a></span></p>
+<img data-src="img/rdm-storage.jpg" class="margin-caption r-stretch quarto-figure-center"><p class="caption">Does your hard drive look like this? (Mine does.)</p><div class="smalltext">
+<p>This illustration is created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. DOI: <a href="https://doi.org/10.5281/zenodo.3332807">10.5281/zenodo.3332807</a></p>
+</div>
 </section>
 <section id="every-researchers-nightmare" class="slide level2">
 <h2>Every Researcher’s Nightmare</h2>
@@ -470,37 +471,63 @@ Shern Tee
 <p></p><figcaption>An erroneous inversion in MsbA (green, left) was identified and corrected, leading to much more consistent structures (right) … and three retractions from <em>Science</em>.</figcaption><p></p>
 </figure>
 </div>
-</div><div class="column" style="width:50%;">
-<blockquote>
-<p>When he investigated, Chang was horrified to discover that a homemade data-analysis program had flipped two columns of data, inverting the electron-density map from which his team had derived the final protein structure. Unfortunately, his group had used the program to analyze data for other proteins. <span class="smalltext"><span class="citation" data-cites="nightmare">Miller (<a href="#/reference" role="doc-biblioref" onclick="">2006</a>)</span></span></p>
-</blockquote>
+</div><div class="column" style="width:45%;">
+<div class="callout callout-note no-icon callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong><span class="citation" data-cites="nightmare">(<a href="#/reference" role="doc-biblioref" onclick="">Miller 2006</a>)</span></strong></p>
+</div>
+<div class="callout-content">
+<div style="text-align: justify; margin-right: 0.5em;">
+<p>When he investigated, Chang was horrified to discover that a homemade data analysis program had flipped two columns of data, inverting the electron-density map from which his team had derived the final protein structure. Unfortunately, his group had used the program to analyze data for other proteins.</p>
 </div>
 </div>
-</section></section>
-<section>
-<section id="research-reproducibility" class="title-slide slide level1 cutout1 center" data-background-color="var(--uqviolet)" data-background-image="img/corner_uqviolet.svg, img/swirl_uqviolet.svg, img/uq_logo0.svg, img/htmlsplash.jpg" data-background-position="50vw bottom, right bottom, right 3% top, 50vw bottom" data-background-repeat="no-repeat, no-repeat, no-repeat, no-repeat" data-background-size="15% auto, 15% auto, 18% 12%, cover">
-<h1>Research Reproducibility</h1>
-<p>What is reproducibility, and why do we struggle with it?</p>
+</div>
+</div>
+</div>
+</div>
 <p><span class="smalltext"><a href="https://unsplash.com/photos/8OyKWQgBsKQ">(Image source)</a></span></p>
 </section>
 <section id="working-definitions" class="slide level2">
 <h2>Working Definitions</h2>
+<div class="quarto-figure quarto-figure-center margin-caption">
+<figure>
 <p><img data-src="img/reproducible-definition-grid.svg" class="margin-caption" width="700" height="525"></p>
-<p><span class="smalltext absolute" style="left: 0px; bottom: 30px; ">Definitions of reproducibility by The Turing Way, <a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html">(link)</a>, DOI: 10.5281/zenodo.7684733. This illustration is created by Scriberia with the Turing Way community. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807.</span></p>
+<p></p><figcaption>Definitions of reproducibility by The Turing Way <a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html">(link)</a>, DOI: 10.5281/zenodo.7684733.</figcaption><p></p>
+</figure>
+</div>
+<div class="smalltext">
+<p>This illustration is created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. DOI: <a href="https://doi.org/10.5281/zenodo.3332807">10.5281/zenodo.3332807</a></p>
+</div>
 </section>
 <section id="benefits-of-reproducibility" class="slide level2">
 <h2>Benefits of Reproducibility</h2>
-<p><img data-src="img/reasons-reproducibility.png"> <span class="smalltext absolute" style="left: 0px; bottom: 30px; ">Benefits of reproducibility by The Turing Way, <a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-benefit.html">(link)</a>, DOI: 10.5281/zenodo.7684733.</span></p>
-</section>
+
+<img data-src="img/reasons-reproducibility.png" class="margin-caption r-stretch quarto-figure-center"><p class="caption">Benefits of reproducibility by The Turing Way <a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-benefit.html">(link)</a>, DOI: 10.5281/zenodo.7684733.</p></section>
 <section id="barriers-to-reproducibility" class="slide level2">
 <h2>Barriers to Reproducibility</h2>
 <div class="columns">
 <div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center margin-caption">
+<figure>
 <p><img data-src="img/feynman-13184-portrait-mini-2x.webp" class="margin-caption" style="width:100.0%"></p>
-</div><div class="column" style="width:70%;">
-<blockquote>
-<p>We have a habit in writing articles published in scientific journals to make the work as finished as possible, to cover all the tracks, to not worry about the blind alleys or to describe how you had the wrong idea first, and so on. So there isn’t any place to publish, in a dignified manner, what you actually did in order to get to do the work, although, there has been in these days, some interest in this kind of thing. <span class="smalltext"><span class="citation" data-cites="feynman">Feynman (<a href="#/reference" role="doc-biblioref" onclick="">1965</a>)</span></span></p>
-</blockquote>
+<p></p><figcaption>Richard Feynman (1918-1988), famous bongo player</figcaption><p></p>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="callout callout-note no-icon callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong><span class="citation" data-cites="feynman">(<a href="#/reference" role="doc-biblioref" onclick="">Feynman 1965</a>)</span></strong></p>
+</div>
+<div class="callout-content">
+<div style="text-align: justify; margin-right: 0.5em;">
+<p>We have a habit in writing articles published in scientific journals to make the work as finished as possible, to cover all the tracks, to not worry about the blind alleys or to describe how you had the wrong idea first, and so on.</p>
+<p>So there isn’t any place to publish, in a dignified manner, what you actually did in order to get to do the work, although, there has been in these days, some interest in this kind of thing.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -511,6 +538,37 @@ Shern Tee
 </section>
 <section id="hackmd" class="slide level2 hide-title" data-background-iframe="https://hackmd.io/@srtee/ctcms-2023-repro/edit" data-background-interactive="true">
 <h2>HackMD</h2>
+</section>
+<section id="a-buffet-tasting" class="slide level2" data-background-image="img/buffet-unsplash.jpg" data-background-position="center bottom 10%" data-background-size="auto 30%">
+<h2>A Buffet Tasting</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center margin-caption">
+<figure>
+<p><img data-src="img/ResearchTools.jpg" class="smallertext margin-caption"></p>
+<p></p><figcaption>You can’t do it all at once – grab what’s useful!</figcaption><p></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="callout callout-note no-icon callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong><span class="citation" data-cites="bromanrr">(<a href="#/reference" role="doc-biblioref" onclick="">Broman 2023</a>)</span></strong></p>
+</div>
+<div class="callout-content">
+<p><em>There are many paths toward reproducible research, and you shouldn’t try to change all aspects of your current practices all at once.</em> <em>Identify one weakness, adopt an improved approach, refine that a bit, and then move on to the next thing.</em></p>
+</div>
+</div>
+</div>
+<div class="smalltext">
+<p>This illustration is created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. DOI: <a href="https://doi.org/10.5281/zenodo.3332807">10.5281/zenodo.3332807</a></p>
+<p>Buffet image from Unsplash <a href="https://unsplash.com/photos/vJsj-hgOEG0">(link)</a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="resources-and-communities" class="slide level2">
+<h2>Resources and Communities</h2>
 </section>
 <section id="overlapping-concepts" class="slide level2">
 <h2>Overlapping concepts</h2>
@@ -534,12 +592,14 @@ Shern Tee
 </div>
 </section></section>
 <section>
-<section id="reproducibility-abcde" class="title-slide slide level1 center">
-<h1>Reproducibility: ABCDE</h1>
-
+<section id="five-steps-abcde" class="title-slide slide level1 headertop center" data-background-image="img/corner_uqviolet.svg, img/swirl_uqviolet.svg, img/EvolutionOpenScience.jpg" data-background-position="left bottom, right bottom, center bottom 10%" data-background-repeat="no-repeat, no-repeat, no-repeat" data-background-size="15% auto, 15% auto, auto 50%">
+<h1>Five Steps: ABCDE</h1>
+<div class="smalltext">
+<p>This illustration is created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. DOI: <a href="https://doi.org/10.5281/zenodo.3332807">10.5281/zenodo.3332807</a></p>
+</div>
 </section>
-<section id="five-reproducibility-steps" class="slide level2 illum-initial" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Five Reproducibility Steps</h2>
+<section id="five-steps" class="slide level2 illum-initial" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Five Steps</h2>
 <div class="fragment">
 <h3 id="automate">Automate</h3>
 <div class="fragment">
@@ -555,7 +615,7 @@ Shern Tee
 </div>
 <h3 id="document">Document</h3>
 <div class="fragment">
-<p><span class="smallertext">Organize and name things well and explain yourself with notebooks</span></p>
+<p><span class="smallertext">Organize and name things well</span></p>
 </div>
 <h3 id="export">Export</h3>
 <div class="fragment">
@@ -674,9 +734,14 @@ Shern Tee
 <div class="absolute" style="top: 200px; left: 650px; width: 300px; ">
 <p>Where you are will influence where you can start!</p>
 </div>
+</section></section>
+<section>
+<section id="backup-3" class="title-slide slide level1 headertop center" data-background-image="img/corner_uqviolet.svg, img/swirl_uqviolet.svg, img/data_crash.png" data-background-position="left bottom, right bottom, center bottom 10%" data-background-repeat="no-repeat, no-repeat, no-repeat" data-background-size="15% auto, 15% auto, auto 30%">
+<h1>Backup</h1>
+<p><span class="smalltext">Webcomic by The Upturned Microscope <a href="https://theupturnedmicroscope.com/comic/flash-comic-february-2016/">(link)</a></span></p>
 </section>
-<section id="backup-3-2-1" class="slide level2 illum-initial">
-<h2>Backup – 3-2-1</h2>
+<section id="the-3-2-1-rule" class="slide level2 illum-initial" data-background-image="img/data_crash.png" data-background-position="center bottom 10%" data-background-size="auto 30%">
+<h2>The 3-2-1 Rule</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="copies-of-data-with">3 copies of data, with</h3>
@@ -699,12 +764,14 @@ Shern Tee
 <p>Make a <em>regular plan</em>! Helpful software: Rsync, Nextcloud, Syncthing</p>
 <p>Synergizes with version control.</p>
 </div>
-<p><img data-src="img/data_crash.png"> <span class="smalltext"><a href="https://theupturnedmicroscope.com/comic/flash-comic-february-2016/">Image Source</a></span></p>
+<p><span class="smalltext">Webcomic by The Upturned Microscope <a href="https://theupturnedmicroscope.com/comic/flash-comic-february-2016/">(link)</a></span></p>
 </section></section>
 <section>
-<section id="document-and-organize" class="title-slide slide level1 center">
-<h1>Document (and Organize)</h1>
-
+<section id="document-3" class="title-slide slide level1 headertop center" data-background-image="img/corner_uqviolet.svg, img/swirl_uqviolet.svg, img/file-management-manual.jpg" data-background-position="left bottom, right bottom, center bottom 10%" data-background-repeat="no-repeat, no-repeat, no-repeat" data-background-size="15% auto, 15% auto, auto 50%">
+<h1>Document</h1>
+<div class="smalltext">
+<p>This illustration is created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. DOI: <a href="https://doi.org/10.5281/zenodo.3332807">10.5281/zenodo.3332807</a></p>
+</div>
 </section>
 <section id="eight-step-filename-convention" class="slide level2">
 <h2>Eight Step Filename Convention</h2>
@@ -797,37 +864,7 @@ Shern Tee
 </ul></li>
 </ul>
 <div class="columns smallertext lesslinespace">
-<div class="column" style="width:30%;">
-<div class="callout callout-note no-icon callout-captioned callout-style-default">
-<div class="callout-body">
-<div class="callout-caption">
-<p><strong>Padding numbers, done right:</strong></p>
-</div>
-<div class="callout-content">
-<p>Sorted order:</p>
-<p><code>01_read-trajectories.py</code></p>
-<p><code>02_calc-msd.py</code></p>
-<p><code>...</code></p>
-<p><code>10_final-figs.py</code></p>
-</div>
-</div>
-</div>
-<div class="callout callout-warning no-icon callout-captioned callout-style-default">
-<div class="callout-body">
-<div class="callout-caption">
-<p><strong>Whoops!</strong></p>
-</div>
-<div class="callout-content">
-<p>Sorted order:</p>
-<p><code>10_final-figs.py</code></p>
-<p><code>...</code></p>
-<p><code>1_read-trajectories.py</code></p>
-<p><code>2_calc-msd.py</code></p>
-<p><code>...</code></p>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:60%;">
+<div class="column" style="width:60%;">
 <div class="callout callout-note no-icon callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
@@ -868,22 +905,50 @@ Shern Tee
 </div>
 </div>
 </div>
+</div><div class="column" style="width:30%;">
+<div class="callout callout-note no-icon callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>Padding numbers, done right:</strong></p>
+</div>
+<div class="callout-content">
+<p>Sorted order:</p>
+<p><code>01_read-trajectories.py</code></p>
+<p><code>02_calc-msd.py</code></p>
+<p><code>...</code></p>
+<p><code>10_final-figs.py</code></p>
 </div>
 </div>
-<p><span class="smalltext">[<span class="citation" data-cites="howtonamethings">Bryan (<a href="#/reference" role="doc-biblioref" onclick="">2015</a>)</span>]</span></p>
+</div>
+<div class="callout callout-warning no-icon callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<p><strong>Whoops!</strong></p>
+</div>
+<div class="callout-content">
+<p>Sorted order:</p>
+<p><code>10_final-figs.py</code></p>
+<p><code>...</code></p>
+<p><code>1_read-trajectories.py</code></p>
+<p><code>2_calc-msd.py</code></p>
+<p><code>...</code></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><span class="smalltext"><span class="citation" data-cites="howtonamethings">(<a href="#/reference" role="doc-biblioref" onclick="">Bryan 2015</a>)</span></span></p>
 </section>
 <section id="directory-structures" class="slide level2">
 <h2>Directory Structures</h2>
 
-<img data-src="img/gin-and-tonic.png" class="morepad margin-caption r-stretch quarto-figure-center"><p class="caption">The “GIN-Tonic” research folder structure standard <span class="citation" data-cites="ginandtonic">(<a href="#/reference" role="doc-biblioref" onclick="">Colomb et al. 2021</a>)</span>. See <a href="https://f1000research.com/posters/7-1965">YODA</a> or <a href="https://drivendata.github.io/cookiecutter-data-science/">Cookiecutter</a> as alternatives.</p></section>
-<section id="using-notebooks" class="slide level2">
-<h2>Using Notebooks</h2>
-
-<img data-src="img/jupyter.webp" class="margin-caption r-stretch quarto-figure-center"><p class="caption">Use Jupyter Notebooks to create reports that both contain and explain your code. A BinderHub (such as <a href="https://mybinder.org/">MyBinder</a>) will deploy environments for notebooks in a Git repository, and let anyone rerun them online!</p></section></section>
+<img data-src="img/gin-and-tonic.png" class="morepad margin-caption r-stretch quarto-figure-center"><p class="caption">The “GIN-Tonic” research folder structure standard <span class="citation" data-cites="ginandtonic">(<a href="#/reference" role="doc-biblioref" onclick="">Colomb et al. 2021</a>)</span>. See <a href="https://f1000research.com/posters/7-1965">YODA</a> or <a href="https://drivendata.github.io/cookiecutter-data-science/">Cookiecutter</a> as alternatives.</p></section></section>
 <section>
-<section id="automate-3" class="title-slide slide level1 center">
+<section id="automate-3" class="title-slide slide level1 headertop center" data-background-image="img/corner_uqviolet.svg, img/swirl_uqviolet.svg, img/file-management-digital-no-text.jpg" data-background-position="left bottom, right bottom, center bottom 10%" data-background-repeat="no-repeat, no-repeat, no-repeat" data-background-size="15% auto, 15% auto, auto 50%">
 <h1>Automate</h1>
-
+<div class="smalltext">
+<p>This illustration is created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. DOI: <a href="https://doi.org/10.5281/zenodo.3332807">10.5281/zenodo.3332807</a></p>
+</div>
 </section>
 <section id="automating-and-simplifying-single-steps" class="slide level2 smallertext">
 <h2>Automating (and simplifying) single steps</h2>
@@ -944,150 +1009,19 @@ Shern Tee
 <img data-src="img/quarto.png" class="margin-caption r-stretch quarto-figure-center"><p class="caption">Editing this presentation with Quarto in the VSCode IDE. No more worrying about getting that picture <em>exactly</em> centered, or clicking through multiple directories to find it!</p></section>
 <section id="automating-a-workflow" class="slide level2">
 <h2>Automating a workflow</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<p>
-<svg width="960" height="480" viewbox="0.00 0.00 718.97 332.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style=" display: block; margin: auto auto auto auto">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)"> <polygon fill="white" stroke="transparent" points="-4,4 -4,-328 714.97,-328 714.97,4 -4,4"></polygon> <!-- 1 --> <g id="node1" class="node">
-<title>
-1
-</title>
-<ellipse fill="none" stroke="black" cx="44.28" cy="-306" rx="44.06" ry="18"></ellipse> <text text-anchor="middle" x="44.28" y="-301.8" font-family="Times,serif" font-size="14.00">database</text> </g> <!-- 3 --> <g id="node3" class="node">
-<title>
-3
-</title>
-<ellipse fill="none" stroke="black" cx="159.28" cy="-234" rx="73.55" ry="18"></ellipse> <text text-anchor="middle" x="159.28" y="-229.8" font-family="Times,serif" font-size="14.00">initial structures</text> </g> <!-- 1&#45;&gt;3 --> <g id="edge1" class="edge">
-<title>
-1-&gt;3
-</title>
-<path fill="none" stroke="black" d="M67.83,-290.67C84.09,-280.77 106,-267.43 124.3,-256.29"></path> <polygon fill="black" stroke="black" points="126.23,-259.22 132.95,-251.03 122.59,-253.24 126.23,-259.22"></polygon> </g> <!-- 2 --> <g id="node2" class="node">
-<title>
-2
-</title>
-<ellipse fill="none" stroke="black" cx="159.28" cy="-306" rx="52.71" ry="18"></ellipse> <text text-anchor="middle" x="159.28" y="-301.8" font-family="Times,serif" font-size="14.00">gen scripts</text> </g> <!-- 2&#45;&gt;3 --> <g id="edge2" class="edge">
-<title>
-2-&gt;3
-</title>
-<path fill="none" stroke="black" d="M159.28,-287.7C159.28,-279.98 159.28,-270.71 159.28,-262.11"></path> <polygon fill="black" stroke="black" points="162.78,-262.1 159.28,-252.1 155.78,-262.1 162.78,-262.1"></polygon> </g> <!-- 5 --> <g id="node5" class="node">
-<title>
-5
-</title>
-<ellipse fill="none" stroke="black" cx="433.28" cy="-306" rx="60.78" ry="18"></ellipse> <text text-anchor="middle" x="433.28" y="-301.8" font-family="Times,serif" font-size="14.00">MD package</text> </g> <!-- 3&#45;&gt;5 --> <g id="edge3" class="edge">
-<title>
-3-&gt;5
-</title>
-<path fill="none" stroke="black" d="M208.17,-247.49C256.17,-259.75 329.24,-278.42 379.01,-291.14"></path> <polygon fill="black" stroke="black" points="378.4,-294.59 388.95,-293.68 380.13,-287.81 378.4,-294.59"></polygon> </g> <!-- 4 --> <g id="node4" class="node">
-<title>
-4
-</title>
-<ellipse fill="none" stroke="black" cx="292.28" cy="-306" rx="62.62" ry="18"></ellipse> <text text-anchor="middle" x="292.28" y="-301.8" font-family="Times,serif" font-size="14.00">input settings</text> </g> <!-- 4&#45;&gt;5 --> <g id="edge4" class="edge">
-<title>
-4-&gt;5
-</title>
-<path fill="none" stroke="black" d="M355.34,-306C357.65,-306 359.96,-306 362.27,-306"></path> <polygon fill="black" stroke="black" points="362.39,-309.5 372.39,-306 362.39,-302.5 362.39,-309.5"></polygon> </g> <!-- 6 --> <g id="node6" class="node">
-<title>
-6
-</title>
-<ellipse fill="none" stroke="black" cx="368.28" cy="-234" rx="53.86" ry="18"></ellipse> <text text-anchor="middle" x="368.28" y="-229.8" font-family="Times,serif" font-size="14.00">trajectories</text> </g> <!-- 5&#45;&gt;6 --> <g id="edge5" class="edge">
-<title>
-5-&gt;6
-</title>
-<path fill="none" stroke="black" d="M417.88,-288.41C409.7,-279.61 399.51,-268.63 390.49,-258.92"></path> <polygon fill="black" stroke="black" points="392.94,-256.42 383.57,-251.47 387.81,-261.18 392.94,-256.42"></polygon> </g> <!-- 7 --> <g id="node7" class="node">
-<title>
-7
-</title>
-<ellipse fill="none" stroke="black" cx="497.28" cy="-234" rx="56.75" ry="18"></ellipse> <text text-anchor="middle" x="497.28" y="-229.8" font-family="Times,serif" font-size="14.00">observables</text> </g> <!-- 5&#45;&gt;7 --> <g id="edge6" class="edge">
-<title>
-5-&gt;7
-</title>
-<path fill="none" stroke="black" d="M448.45,-288.41C456.5,-279.61 466.53,-268.63 475.41,-258.92"></path> <polygon fill="black" stroke="black" points="478.06,-261.21 482.22,-251.47 472.89,-256.49 478.06,-261.21"></polygon> </g> <!-- 8 --> <g id="node8" class="node">
-<title>
-8
-</title>
-<ellipse fill="none" stroke="black" cx="495.28" cy="-162" rx="55.65" ry="18"></ellipse> <text text-anchor="middle" x="495.28" y="-157.8" font-family="Times,serif" font-size="14.00">proc scripts</text> </g> <!-- 6&#45;&gt;8 --> <g id="edge7" class="edge">
-<title>
-6-&gt;8
-</title>
-<path fill="none" stroke="black" d="M394.9,-218.33C413.57,-208.04 438.75,-194.16 459.22,-182.87"></path> <polygon fill="black" stroke="black" points="461.19,-185.79 468.25,-177.9 457.81,-179.66 461.19,-185.79"></polygon> </g> <!-- 9 --> <g id="node9" class="node">
-<title>
-9
-</title>
-<ellipse fill="none" stroke="black" cx="370.28" cy="-162" rx="49.87" ry="18"></ellipse> <text text-anchor="middle" x="370.28" y="-157.8" font-family="Times,serif" font-size="14.00">vis scripts</text> </g> <!-- 6&#45;&gt;9 --> <g id="edge9" class="edge">
-<title>
-6-&gt;9
-</title>
-<path fill="none" stroke="black" d="M368.77,-215.7C368.99,-207.98 369.26,-198.71 369.5,-190.11"></path> <polygon fill="black" stroke="black" points="373,-190.2 369.79,-180.1 366.01,-190 373,-190.2"></polygon> </g> <!-- 7&#45;&gt;8 --> <g id="edge11" class="edge">
-<title>
-7-&gt;8
-</title>
-<path fill="none" stroke="black" d="M496.79,-215.7C496.56,-207.98 496.3,-198.71 496.05,-190.11"></path> <polygon fill="black" stroke="black" points="499.55,-190 495.77,-180.1 492.56,-190.2 499.55,-190"></polygon> </g> <!-- 7&#45;&gt;9 --> <g id="edge8" class="edge">
-<title>
-7-&gt;9
-</title>
-<path fill="none" stroke="black" d="M470.35,-218.15C451.53,-207.78 426.22,-193.83 405.76,-182.55"></path> <polygon fill="black" stroke="black" points="407.19,-179.35 396.74,-177.58 403.81,-185.48 407.19,-179.35"></polygon> </g> <!-- 11 --> <g id="node11" class="node">
-<title>
-11
-</title>
-<ellipse fill="none" stroke="black" cx="459.28" cy="-90" rx="33.62" ry="18"></ellipse> <text text-anchor="middle" x="459.28" y="-85.8" font-family="Times,serif" font-size="14.00">tables</text> </g> <!-- 8&#45;&gt;11 --> <g id="edge12" class="edge">
-<title>
-8-&gt;11
-</title>
-<path fill="none" stroke="black" d="M486.56,-144.05C482.36,-135.89 477.23,-125.91 472.56,-116.82"></path> <polygon fill="black" stroke="black" points="475.6,-115.08 467.91,-107.79 469.37,-118.28 475.6,-115.08"></polygon> </g> <!-- 12 --> <g id="node12" class="node">
-<title>
-12
-</title>
-<ellipse fill="none" stroke="black" cx="555.28" cy="-90" rx="44.09" ry="18"></ellipse> <text text-anchor="middle" x="555.28" y="-85.8" font-family="Times,serif" font-size="14.00">numbers</text> </g> <!-- 8&#45;&gt;12 --> <g id="edge13" class="edge">
-<title>
-8-&gt;12
-</title>
-<path fill="none" stroke="black" d="M509.5,-144.41C516.97,-135.69 526.27,-124.85 534.53,-115.21"></path> <polygon fill="black" stroke="black" points="537.31,-117.34 541.16,-107.47 532,-112.78 537.31,-117.34"></polygon> </g> <!-- 10 --> <g id="node10" class="node">
-<title>
-10
-</title>
-<ellipse fill="none" stroke="black" cx="370.28" cy="-90" rx="37.71" ry="18"></ellipse> <text text-anchor="middle" x="370.28" y="-85.8" font-family="Times,serif" font-size="14.00">figures</text> </g> <!-- 9&#45;&gt;10 --> <g id="edge10" class="edge">
-<title>
-9-&gt;10
-</title>
-<path fill="none" stroke="black" d="M370.28,-143.7C370.28,-135.98 370.28,-126.71 370.28,-118.11"></path> <polygon fill="black" stroke="black" points="373.78,-118.1 370.28,-108.1 366.78,-118.1 373.78,-118.1"></polygon> </g> <!-- 14 --> <g id="node14" class="node">
-<title>
-14
-</title>
-<ellipse fill="none" stroke="black" cx="507.28" cy="-18" rx="47.54" ry="18"></ellipse> <text text-anchor="middle" x="507.28" y="-13.8" font-family="Times,serif" font-size="14.00">paper.pdf</text> </g> <!-- 10&#45;&gt;14 --> <g id="edge14" class="edge">
-<title>
-10-&gt;14
-</title>
-<path fill="none" stroke="black" d="M395.09,-76.32C416.19,-65.54 446.79,-49.91 470.7,-37.69"></path> <polygon fill="black" stroke="black" points="472.52,-40.69 479.83,-33.02 469.33,-34.46 472.52,-40.69"></polygon> </g> <!-- 11&#45;&gt;14 --> <g id="edge15" class="edge">
-<title>
-11-&gt;14
-</title>
-<path fill="none" stroke="black" d="M470.41,-72.76C476.26,-64.23 483.57,-53.58 490.12,-44.02"></path> <polygon fill="black" stroke="black" points="493.1,-45.86 495.87,-35.63 487.33,-41.9 493.1,-45.86"></polygon> </g> <!-- 12&#45;&gt;14 --> <g id="edge16" class="edge">
-<title>
-12-&gt;14
-</title>
-<path fill="none" stroke="black" d="M543.9,-72.41C538.19,-64.08 531.14,-53.8 524.76,-44.49"></path> <polygon fill="black" stroke="black" points="527.45,-42.22 518.91,-35.96 521.68,-46.18 527.45,-42.22"></polygon> </g> <!-- 13 --> <g id="node13" class="node">
-<title>
-13
-</title>
-<ellipse fill="none" stroke="black" cx="664.28" cy="-90" rx="46.89" ry="18"></ellipse> <text text-anchor="middle" x="664.28" y="-85.8" font-family="Times,serif" font-size="14.00">paper.tex</text> </g> <!-- 13&#45;&gt;14 --> <g id="edge17" class="edge">
-<title>
-13-&gt;14
-</title>
-<path fill="none" stroke="black" d="M634.75,-75.83C609.72,-64.67 573.63,-48.58 546.24,-36.37"></path> <polygon fill="black" stroke="black" points="547.5,-33.1 536.94,-32.23 544.65,-39.5 547.5,-33.1"></polygon> </g> </g>
-</svg>
-</p>
+
+<img data-src="img/reproducible-pipeline-no-text.jpg" class="margin-caption r-stretch quarto-figure-center" data-align="left"><p class="caption">After automating individual steps, you can fit them together into an automated workflow!</p><div class="smalltext">
+<p>This illustration is created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. DOI: <a href="https://doi.org/10.5281/zenodo.3332807">10.5281/zenodo.3332807</a></p>
 </div>
-</div>
-</div>
-<div class="smallertext absolute" style="top: 300px; left: 100px; width: 300px; ">
-<p>Tools to try:</p>
-<p>(Python) Snakemake, FireWorks, Signac</p>
-<p><code>make</code> (<a href="https://the-turing-way.netlify.app/reproducible-research/make/make-examples.html">TTW tutorial</a>)</p>
+<div class="smallertext">
+<p>Tools to try: (Python) Snakemake, FireWorks, Signac, <code>make</code> (<a href="https://the-turing-way.netlify.app/reproducible-research/make/make-examples.html">TTW tutorial</a>)</p>
 </div>
 </section>
-<section id="automating-a-workflow-1" class="slide level2 smalltext">
+<section id="automating-a-workflow-1" class="slide level2">
 <h2>Automating a workflow</h2>
 <p>Signac example:</p>
+<div class="columns smallertext">
+<div class="column" style="width:50%;">
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>project.py</strong></pre>
@@ -1097,40 +1031,71 @@ Shern Tee
 <span id="cb2-3"><a href="#cb2-3"></a><span class="at">@Project.post.isfile</span>(<span class="st">'restart.file.1'</span>)</span>
 <span id="cb2-4"><a href="#cb2-4"></a><span class="at">@Project.operation</span>(cmd<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb2-5"><a href="#cb2-5"></a><span class="kw">def</span> first_run(job):</span>
-<span id="cb2-6"><a href="#cb2-6"></a>    <span class="cf">return</span> <span class="ss">f'</span><span class="sc">{</span>lmp<span class="sc">}</span><span class="ss"> -in lammps.input -var if_restart 0 ... '</span></span>
-<span id="cb2-7"><a href="#cb2-7"></a></span>
-<span id="cb2-8"><a href="#cb2-8"></a><span class="at">@Project.pre.isfile</span>(<span class="st">'restart.file.1'</span>)</span>
-<span id="cb2-9"><a href="#cb2-9"></a><span class="at">@Project.post.isfile</span>(<span class="st">'final.data'</span>)</span>
-<span id="cb2-10"><a href="#cb2-10"></a><span class="at">@Project.operation</span>(cmd<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="kw">def</span> restart_run(job):</span>
-<span id="cb2-12"><a href="#cb2-12"></a>    <span class="cf">return</span> <span class="ss">f'</span><span class="sc">{</span>lmp<span class="sc">}</span><span class="ss"> -in lammps.input -var if_restart 1 ...'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-6"><a href="#cb2-6"></a>    <span class="cf">return</span> <span class="ss">f'</span><span class="sc">{</span>lmp<span class="sc">}</span><span class="ss"> -in lammps.input'</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a>      <span class="co">' -var if_restart 0 ... '</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="at">@Project.pre.isfile</span>(<span class="st">'restart.file.1'</span>)</span>
+<span id="cb2-10"><a href="#cb2-10"></a><span class="at">@Project.post.isfile</span>(<span class="st">'final.data'</span>)</span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="at">@Project.operation</span>(cmd<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb2-12"><a href="#cb2-12"></a><span class="kw">def</span> restart_run(job):</span>
+<span id="cb2-13"><a href="#cb2-13"></a>    <span class="cf">return</span> <span class="ss">f'</span><span class="sc">{</span>lmp<span class="sc">}</span><span class="ss"> -in lammps.input'</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a>      <span class="co">' -var if_restart 1 ... '</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</div><div class="column" style="width:50%;">
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>lammps.input</strong></pre>
 </div>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a href="#cb3-1"></a>...</span>
-<span id="cb3-2"><a href="#cb3-2"></a>if "${if_restart} == 0" then "read_data start.data"</span>
-<span id="cb3-3"><a href="#cb3-3"></a>if "${if_restart} == 1" then "read_restart restart.file.1"</span>
-<span id="cb3-4"><a href="#cb3-4"></a>...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-2"><a href="#cb3-2"></a>if "${if_restart} == 0" &amp;</span>
+<span id="cb3-3"><a href="#cb3-3"></a>  then "read_data start.data"</span>
+<span id="cb3-4"><a href="#cb3-4"></a></span>
+<span id="cb3-5"><a href="#cb3-5"></a>if "${if_restart} == 1" &amp;</span>
+<span id="cb3-6"><a href="#cb3-6"></a>  then "read_restart restart.file.1"</span>
+<span id="cb3-7"><a href="#cb3-7"></a>...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>shell commands</strong></pre>
 </div>
 <div class="sourceCode" id="cb4"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a href="#cb4-1"></a>$ python3 project.py status</span>
-<span id="cb4-2"><a href="#cb4-2"></a>$ python3 project.py submit -o run_cpm [options]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-2"><a href="#cb4-2"></a>$ python3 project.py submit \</span>
+<span id="cb4-3"><a href="#cb4-3"></a>  -o run_cpm [options] ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="readable-and-reusable-code" class="slide level2">
+<h2>Readable and Reusable Code</h2>
+
+<img data-src="img/ReadableCode.jpg" class="margin-caption r-stretch quarto-figure-center"><p class="caption">Learn to write <em>readable code</em>, and even better, code that is easily <em>reusable</em> in future!</p><div class="smalltext">
+<p>This illustration is created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. DOI: <a href="https://doi.org/10.5281/zenodo.3332807">10.5281/zenodo.3332807</a></p>
 </div>
 </section></section>
 <section>
-<section id="control-and-export" class="title-slide slide level1 center">
+<section id="control-and-export" class="title-slide slide level1 headertop center" data-background-image="img/corner_uqviolet.svg, img/swirl_uqviolet.svg, img/community-exchange.jpg" data-background-position="left bottom, right bottom, center bottom 10%" data-background-repeat="no-repeat, no-repeat, no-repeat" data-background-size="15% auto, 15% auto, auto 50%">
 <h1>Control and Export</h1>
-
+<div class="smalltext">
+<p>This illustration is created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. DOI: <a href="https://doi.org/10.5281/zenodo.3332807">10.5281/zenodo.3332807</a></p>
+</div>
 </section>
 <section id="version-control" class="slide level2">
 <h2>Version Control</h2>
-<p><a href="https://the-turing-way.netlify.app/reproducible-research/vcs.html">TTW on Version Control</a></p>
-<p><a href="https://cosimameyer.com/post/git-the-perks-of-collaboration-and-version-control/">Cosima Meyer’s blog post</a></p>
+
+<img data-src="img/VersionControl.jpg" class="margin-caption r-stretch quarto-figure-center"><p class="caption">Change things quickly knowing you can always retrieve past versions!</p><div class="smalltext">
+<p>This illustration is created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. DOI: <a href="https://doi.org/10.5281/zenodo.3332807">10.5281/zenodo.3332807</a></p>
+<p><a href="https://the-turing-way.netlify.app/reproducible-research/vcs.html">TTW guide on Version Control</a></p>
+</div>
+</section>
+<section id="git-in-one-slide" class="slide level2">
+<h2>Git In One Slide</h2>
+
+<img data-src="img/git_flow.png" class="margin-caption r-stretch quarto-figure-center"><p class="caption">For files in your <em>working directory</em> that you care about, you <strong>add</strong> them to Git’s <em>staging area</em>. To save a version of your <em>staging area</em>, you <strong>commit</strong> it to your <em>local repository</em>, which you can <strong>push</strong> to a <em>remote repository</em> (like GitHub) for backup and sharing. You can <strong>clone</strong> a remote repository to your local repository and <strong>pull</strong> updated changes from the remote; you can then <strong>merge</strong> changes into your working directory, or <strong>checkout</strong> old commits to recover a previous version!</p><div class="smalltext">
+<p>Image from <a href="https://cosimameyer.com/post/git-the-perks-of-collaboration-and-version-control/">Cosima Meyer’s blog post</a>, which is also a great short guide.</p>
+</div>
+</section>
+<section id="export-your-environment" class="slide level2">
+<h2>Export your Environment</h2>
 </section>
 <section id="acknowledgements" class="slide level2">
 <h2>Acknowledgements</h2>
