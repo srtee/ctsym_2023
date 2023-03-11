@@ -46,7 +46,9 @@ editor:
 
 ## (Not) Managing Your Data
 
-![Does your hard drive look like this? (Mine does.)](img/rdm-storage.jpg)
+![Does your hard drive look like this? (Mine does.)](img/rdm-storage.jpg){fig-alt="Illustration shows two researchers rummaging 
+through a closet full of unlabelled folders, skulls, mysterious vials, and cobwebs, looking for 'data from last year', 
+as a warning about the dangers of poor data management."}
 
 ::: {.smalltext}
 {{< include _scriberia.qmd >}}
@@ -56,7 +58,9 @@ editor:
 
 ::: {.columns}
 :::: {.column width="50%"}
-![An erroneous inversion in MsbA (green, left) was identified and corrected, leading to much more consistent structures (right) ... and three retractions from _Science_.](nightmare.gif)
+![An erroneous inversion in MsbA (green, left) was identified and corrected, leading to much more consistent structures (right) 
+... and three retractions from _Science_.](nightmare.gif){fig-alt="Illustration on left shows two protein structures misaligned 
+because of erroneous software analysis of one of the protein structures; on the right, the corrected analysis shows aligned structures."}
 ::::
 
 :::: {.column width="45%"}
@@ -67,7 +71,9 @@ editor:
 ## [@nightmare]
 
 ::: {style="text-align: justify; margin-right: 0.5em;"}
-When he investigated, Chang was horrified to discover that a homemade data analysis program had flipped two columns of data, inverting the electron-density map from which his team had derived the final protein structure. Unfortunately, his group had used the program to analyze data for other proteins.
+When he investigated, Chang was horrified to discover that a homemade data analysis program had flipped two columns of data, 
+inverting the electron-density map from which his team had derived the final protein structure. 
+Unfortunately, his group had used the program to analyze data for other proteins.
 :::
 
 :::::
@@ -77,11 +83,16 @@ When he investigated, Chang was horrified to discover that a homemade data analy
 
 [[(Image source)](https://unsplash.com/photos/8OyKWQgBsKQ)]{.smalltext}
 
-## Working Definitions
+## Definitions of Reproducibility
 
 ![Definitions of reproducibility by The Turing Way 
 [(link)](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html),
-DOI: 10.5281/zenodo.7684733.](img/reproducible-definition-grid.svg){width=700px height=525px}
+DOI: 10.5281/zenodo.7684733.](img/reproducible-definition-grid.svg){width=700px height=525px fig-alt="A grid showing 
+four definitions of reproducibility as researchers pouring components into machines to reproduce a landscape. Top left, 
+'reproducible' research involves using the same data and same analysis to get the same results; top right, 'replicable' 
+research involves using different data in the same analysis to get meaningful results; bottom left, 'robust' research 
+involves using same data with different analyses to get consistent results; bottom right, 'generalisable' research 
+involves using different data with different analyses to build a complex and complete picture."}
 
 ::: {.smalltext}
 {{< include _scriberia.qmd >}}
@@ -92,13 +103,17 @@ DOI: 10.5281/zenodo.7684733.](img/reproducible-definition-grid.svg){width=700px 
 
 ![Benefits of reproducibility by The Turing Way 
 [(link)](https://the-turing-way.netlify.app/reproducible-research/overview/overview-benefit.html),
-DOI: 10.5281/zenodo.7684733.](img/reasons-reproducibility.png)
+DOI: 10.5281/zenodo.7684733.](img/reasons-reproducibility.png){fig-alt="Six benefits of reproducibility 
+laid out in a grid. Clockwise from top left, reproducibility allows you: to track project history, more easily 
+collaborate and review research with others, avoid misinformation about your research, ensure 
+continuity between different lab members and end-users, get credited fairly for your research, and 
+write your paper efficiently."}
 
 ## Barriers to Reproducibility
 
 :::: {.columns}
 ::: {.column width="30%"}
-![Richard Feynman (1918-1988), famous bongo player](img/feynman-13184-portrait-mini-2x.webp){width=100%}
+![Richard Feynman (1918-1988), famous bongo player](img/feynman-13184-portrait-mini-2x.webp){width=100% fig-alt="Portrait of Richard Feynman, famous bongo player, sometimes physicist"}
 :::
 
 ::: {.column width="60%"}
@@ -119,7 +134,7 @@ So there isn’t any place to publish, in a dignified manner, what you actually 
 
 ## Reflection Exercise 1
 
-What barriers to reproducibility have you encountered?
+What barriers to good data management and reproducibility have you encountered?
 
 Navigate to `https://hackmd.io/@srtee/ctcms-2023-repro/edit` ...
 
@@ -128,17 +143,18 @@ Navigate to `https://hackmd.io/@srtee/ctcms-2023-repro/edit` ...
 ## A Buffet Tasting {
   data-background-image="img/buffet-unsplash.jpg"
   data-background-position="center bottom 10%"
-  data-background-size="auto 30%"
+  data-background-size="auto 25%"
 }
 
 ::: {.columns}
 :::: {.column width="40%"}
-![You can't do it all at once -- grab what's useful!](img/ResearchTools.jpg){.smallertext}
+![You can't do it all at once -- grab what's useful!](img/ResearchTools.jpg){.smallertext fig-alt="Depiction of different tools 
+as circles in a network, with four researchers each reaching out and grabbing different tools according to their needs."}
 ::::
 
 :::: {.column width="50%"}
 
-::::: {.callout-note icon="false"}
+::::: {.callout-note .smallertext icon="false"}
 
 ## [@bromanrr]
 
@@ -161,6 +177,23 @@ Buffet image from Unsplash [(link)](https://unsplash.com/photos/vJsj-hgOEG0)
 
 ## Resources and Communities
 
+::: {.columns}
+:::: {.column width="35%"}
+
+![The Turing Way -- an online community and handbook for reproducible, ethical and collaborative data science!](img/LogoDetailWithText.jpg)
+
+::::
+
+:::: {.column width="35%"}
+![Everything's better when you do it together!](img/CommunityNetwork.jpg)
+::::
+
+:::: {.column width="30%" .smallertext}
+This talk was inspired by a TTW Workshop on "Reproducible, Open and FAIR Research" [@TTWworkshop]
+and Dan Katz's "Research Reproducibility" talk [@Katz_CompRepro].
+::::
+:::
+
 ## Overlapping concepts
 
 :::: {.columns}
@@ -174,9 +207,12 @@ Buffet image from Unsplash [(link)](https://unsplash.com/photos/vJsj-hgOEG0)
 
 ::: {.column width="60%"}
 ![](img/NIH_sharing.png)
-[NIH DMS Policy](https://sharing.nih.gov/data-management-and-sharing-policy/about-data-management-and-sharing-policies/data-management-and-sharing-policy-overview){.smalltext}
+[NIH DMS Policy](https://sharing.nih.gov/data-management-and-sharing-policy/about-data-management-and-sharing-policies/data-management-and-sharing-policy-overview){.smalltext 
+fig-alt="Screenshot from NIH Data Management and Sharing Policy"}
 
-![](img/fairmat.webp){.morepad}
+![](img/fairmat.webp){.morepad 
+fig-alt="Diagram of four components of the FAIRMat initiative: convincing people that data sharing advances science, developing
+metadata and ontologies, developing reproducible workflows, and providing necessary infrastructure."}
 [@fairmat]{.smalltext}
 :::
 ::::
@@ -642,7 +678,7 @@ $ python3 project.py submit \
 
 ## Version Control
 
-![Change things quickly knowing you can always retrieve past versions!](img/VersionControl.jpg)
+![Change things quickly knowing you can always retrieve past versions! This is also an important pre-requisite for _continuous integration_.](img/VersionControl.jpg)
 
 ::: {.smalltext}
 {{< include _scriberia.qmd >}}
@@ -658,10 +694,53 @@ $ python3 project.py submit \
 Image from [Cosima Meyer's blog post](https://cosimameyer.com/post/git-the-perks-of-collaboration-and-version-control/), which is also a great short guide.
 :::
 
-## Export your Environment
+## Export your work {.smallertext}
 
+Sharing your computational environment:
 
+- Python: `python -m pip freeze > requirements.txt` or `conda env export > environment.yml`
+- More complex requirements:
+  - _containers_ (Docker, Singularity / Apptainer), or
+  - _reproducible build_ systems (EasyBuild, Spack)
+- Jupyter Notebooks can "showcase" code with BinderHub or `nbdev`.
 
-## Acknowledgements
+Hosting your data online:
 
-## Reference
+- See PLOS ONE's [list of recommended repositories](https://journals.plos.org/plosone/s/recommended-repositories), and ask your university! (for example UQ's eSpace)
+- Very important to get a DOI for citability!
+
+Licensing your work: see last section of Dan Katz's slides [@Katz_CompRepro].
+
+## Reflection Exercise 2
+
+What one thing would you like to practice in the coming month?
+
+Navigate to `https://hackmd.io/@srtee/ctcms-2023-repro/edit` ...
+
+## HackMD {.hide-title background-iframe="https://hackmd.io/\@srtee/ctcms-2023-repro/edit" background-interactive=true}
+
+## All the best on your reproducibility journey! {.headertop
+  data-background-image="img/corner_uqviolet.svg, img/swirl_uqviolet.svg, img/EvolutionOpenScience.jpg"
+  data-background-position="left bottom, right bottom, center bottom 10%"
+  data-background-repeat="no-repeat, no-repeat, no-repeat"
+  data-background-size="15% auto, 15% auto, auto 50%"
+}
+
+## Acknowledgements {.headertop
+  data-background-image="img/corner_uqviolet.svg, img/swirl_uqviolet.svg, img/EvolutionOpenScience.jpg"
+  data-background-position="left bottom, right bottom, right 10% bottom 10%"
+  data-background-repeat="no-repeat, no-repeat, no-repeat"
+  data-background-size="15% auto, 15% auto, auto 30%"
+}
+
+::: {layout="[24,12,10]"}
+
+![Prof Debra Bernhardt and the Bernhardt Group](img/Bernhardt_Group.jpeg)
+
+![The Turing Way](img/LogoDetailWithText.jpg)
+
+![Research Software Engineers Au-NZ](img/RSE_AUNZ_logo.png){.morepad}
+
+:::
+
+## References
