@@ -3,7 +3,7 @@ title: "Data Management and Reproducibility (CTCMS Symposium 2023)"
 subtitle: "A Buffet Tasting"
 author: "Shern Tee"
 institute: "The University of Queensland"
-date: today
+date: "13 March 2023"
 bibliography: refs.bib
 format: 
   revealjs:
@@ -422,8 +422,7 @@ V25_F100_full.dcd
 :::
 
 ::: {.column width=70%}
-[.]{.smalltext color=#ffffff}
-
+[[@howtonamethings]]{.smalltext}
 
 NO:
 
@@ -440,8 +439,6 @@ YES:
 - `1986-01-28_challenger-o-rings_raw-data.txt`
 :::
 ::::
-
-[[@howtonamethings]]{.smalltext}
 
 ## Three Principles: Good (File) Names Are {auto-animate="true"}
 
