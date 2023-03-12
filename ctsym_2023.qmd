@@ -12,7 +12,7 @@ format:
     toc-depth: 1
     theme: uq.scss
     css: uq_metropolis.css
-    footer: "Data Management and Reproducibility (CTCMS Symposium 2023)"
+    footer: "DOI: 10.5281/zenodo.7725483"
     logo: img/uq_logo.svg
     resources: img
     title-slide-attributes:
@@ -26,6 +26,8 @@ editor:
 ---
 
 ## About Me
+
+![I did (PhD) weird DNA simulations, (2019-2020) weird protein simulations, and (2021-now) weird electrode-electrolyte simulations. Spot the pattern! Find out more at my (very poorly maintained) [website](https://srtee.github.io).](img/my_work.png)
 
 ## Workshop Goals
 
